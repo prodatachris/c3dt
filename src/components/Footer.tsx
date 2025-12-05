@@ -31,8 +31,8 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-12 mb-16">
-          <div className="lg:col-span-2">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 mb-16">
+          <div className="col-span-2 md:col-span-3 lg:col-span-1">
             <Link to="/" className="inline-block mb-6">
               <img
                 src="https://cdn.prod.website-files.com/6667650acd969c112f9a8ac5/6674605645ae08d09cf87bfe_logo%201.svg"
@@ -40,10 +40,10 @@ export default function Footer() {
                 className="h-12 w-auto hover:opacity-80 transition-opacity"
               />
             </Link>
-            <p className="text-gray-400 mb-8 leading-relaxed text-sm max-w-xs">
+            <p className="text-gray-400 mb-8 leading-relaxed text-sm">
               Revolutionizing industrial 3D printing with innovative all-in-one manufacturing solutions.
             </p>
-            <div className="flex gap-3 mb-8">
+            <div className="flex gap-3">
               <a
                 href="https://linkedin.com"
                 target="_blank"
@@ -74,22 +74,6 @@ export default function Footer() {
               >
                 <Mail size={20} />
               </a>
-            </div>
-
-            <div className="space-y-3">
-              <div className="flex items-start gap-3">
-                <MapPin size={18} className="text-red-500 flex-shrink-0 mt-0.5" />
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  1600 Dungan Ln Building 2<br />
-                  Austin, TX 78754
-                </p>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone size={18} className="text-red-500 flex-shrink-0" />
-                <a href="tel:+15128846575" className="text-gray-400 text-sm hover:text-red-500 transition-colors">
-                  +1 (512) 884-6575
-                </a>
-              </div>
             </div>
           </div>
 
@@ -144,10 +128,29 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+
+          <div>
+            <h3 className="font-bold mb-5 text-white text-sm uppercase tracking-wider">Contact</h3>
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <MapPin size={18} className="text-red-500 flex-shrink-0 mt-0.5" />
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  1600 Dungan Ln Building 2<br />
+                  Austin, TX 78754
+                </p>
+              </div>
+              <div className="flex items-center gap-3">
+                <Phone size={18} className="text-red-500 flex-shrink-0" />
+                <a href="tel:+15128846575" className="text-gray-400 text-sm hover:text-red-500 transition-colors">
+                  +1 (512) 884-6575
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="pt-8 border-t border-gray-800">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+          <div className="flex flex-col items-center gap-2 text-sm text-center">
             <p className="text-gray-500">
               {currentYear} Creative 3D Technologies, Inc. All rights reserved.
             </p>
