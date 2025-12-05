@@ -59,7 +59,7 @@ export default function Features() {
           <div className="h-1 w-24 bg-gradient-to-r from-red-600 to-transparent mx-auto mt-6" />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-16">
           {features.map((feature, index) => (
             <div
               key={index}
