@@ -41,6 +41,9 @@ export default function Navigation() {
     { name: 'Creative', href: '#' },
     { name: 'Industrial', href: '#' },
     { name: 'Education', href: '#' },
+    { name: 'Aerospace', href: '#' },
+    { name: 'Automotive', href: '#' },
+    { name: 'Rapid Prototyping', href: '#' },
   ];
 
   return (
