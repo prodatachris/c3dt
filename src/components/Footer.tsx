@@ -29,42 +29,60 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-12 mb-12">
+    <footer className="bg-black text-white border-t border-gray-800">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-12 mb-16">
           <div className="lg:col-span-2">
-            <Link to="/">
+            <Link to="/" className="inline-block mb-6">
               <img
                 src="https://cdn.prod.website-files.com/6667650acd969c112f9a8ac5/6674605645ae08d09cf87bfe_logo%201.svg"
                 alt="Creative 3D Technologies"
-                className="h-12 w-auto mb-4"
+                className="h-12 w-auto hover:opacity-80 transition-opacity"
               />
             </Link>
-            <p className="text-gray-400 mb-6 leading-relaxed">
+            <p className="text-gray-400 mb-8 leading-relaxed text-sm max-w-xs">
               Revolutionizing industrial 3D printing with innovative all-in-one manufacturing solutions.
             </p>
-            <div className="flex gap-4">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-red-600 transition-colors">
+            <div className="flex gap-3">
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-11 h-11 bg-gray-900 rounded-lg flex items-center justify-center hover:bg-red-600 transition-all duration-300 hover:scale-110 border border-gray-800 hover:border-red-600"
+              >
                 <Linkedin size={20} />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-red-600 transition-colors">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-11 h-11 bg-gray-900 rounded-lg flex items-center justify-center hover:bg-red-600 transition-all duration-300 hover:scale-110 border border-gray-800 hover:border-red-600"
+              >
                 <Twitter size={20} />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-red-600 transition-colors">
+              <a
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-11 h-11 bg-gray-900 rounded-lg flex items-center justify-center hover:bg-red-600 transition-all duration-300 hover:scale-110 border border-gray-800 hover:border-red-600"
+              >
                 <Youtube size={20} />
               </a>
-              <a href="mailto:info@creative3dtechnologies.com" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-red-600 transition-colors">
+              <a
+                href="mailto:info@creative3dtechnologies.com"
+                className="w-11 h-11 bg-gray-900 rounded-lg flex items-center justify-center hover:bg-red-600 transition-all duration-300 hover:scale-110 border border-gray-800 hover:border-red-600"
+              >
                 <Mail size={20} />
               </a>
             </div>
           </div>
 
           <div>
-            <h3 className="font-bold mb-4">Platforms</h3>
+            <h3 className="font-bold mb-5 text-white text-sm uppercase tracking-wider">Platforms</h3>
             <ul className="space-y-3">
               {footerLinks.platforms.map((link) => (
                 <li key={link.name}>
-                  <Link to={link.href} className="text-gray-400 hover:text-red-500 transition-colors">
+                  <Link to={link.href} className="text-gray-400 hover:text-red-500 transition-colors text-sm block hover:translate-x-1 transition-transform duration-200">
                     {link.name}
                   </Link>
                 </li>
@@ -73,11 +91,11 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-bold mb-4">Industries</h3>
+            <h3 className="font-bold mb-5 text-white text-sm uppercase tracking-wider">Industries</h3>
             <ul className="space-y-3">
               {footerLinks.industries.map((link) => (
                 <li key={link.name}>
-                  <Link to={link.href} className="text-gray-400 hover:text-red-500 transition-colors">
+                  <Link to={link.href} className="text-gray-400 hover:text-red-500 transition-colors text-sm block hover:translate-x-1 transition-transform duration-200">
                     {link.name}
                   </Link>
                 </li>
@@ -86,11 +104,11 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-bold mb-4">Knowledge</h3>
+            <h3 className="font-bold mb-5 text-white text-sm uppercase tracking-wider">Knowledge</h3>
             <ul className="space-y-3">
               {footerLinks.knowledge.map((link) => (
                 <li key={link.name}>
-                  <Link to={link.href} className="text-gray-400 hover:text-red-500 transition-colors">
+                  <Link to={link.href} className="text-gray-400 hover:text-red-500 transition-colors text-sm block hover:translate-x-1 transition-transform duration-200">
                     {link.name}
                   </Link>
                 </li>
@@ -99,11 +117,11 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-bold mb-4">Company</h3>
+            <h3 className="font-bold mb-5 text-white text-sm uppercase tracking-wider">Company</h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
-                  <Link to={link.href} className="text-gray-400 hover:text-red-500 transition-colors">
+                  <Link to={link.href} className="text-gray-400 hover:text-red-500 transition-colors text-sm block hover:translate-x-1 transition-transform duration-200">
                     {link.name}
                   </Link>
                 </li>
@@ -113,20 +131,17 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-gray-800">
-          <div className="flex flex-col items-center gap-3 text-center">
-            <p className="text-gray-400 text-sm">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+            <p className="text-gray-500">
               {currentYear} Creative 3D Technologies, Inc. All rights reserved.
             </p>
-            <p className="text-gray-400 text-sm">
-              Austin, Texas
-            </p>
-            <p className="text-gray-400 text-sm">
-              Website designed by:{' '}
+            <p className="text-gray-500">
+              Website designed by{' '}
               <a
                 href="https://drivetopline.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-red-500 hover:text-red-400 transition-colors"
+                className="text-red-500 hover:text-red-400 transition-colors font-medium"
               >
                 drivetopline.com
               </a>
