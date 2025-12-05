@@ -228,7 +228,7 @@ export default function EVO() {
 
             <div>
               <h2 className="text-4xl font-bold text-white mb-8">Manufacturing Capabilities</h2>
-              <div className="grid grid-cols-2 gap-3 mb-8">
+              <div className="grid grid-cols-2 gap-3">
                 {capabilities.map((capability, index) => (
                   <div
                     key={index}
@@ -238,27 +238,6 @@ export default function EVO() {
                     <span className="text-gray-300 text-sm font-medium">{capability}</span>
                   </div>
                 ))}
-              </div>
-
-              <div className="p-8 bg-gradient-to-br from-red-950/50 to-gray-900/50 rounded-xl border-2 border-red-800/50 relative overflow-hidden">
-                <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:30px_30px]" />
-                <div className="relative">
-                  <h3 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
-                    <Zap className="text-red-600" size={24} />
-                    Ready to Transform Your Manufacturing?
-                  </h3>
-                  <p className="text-gray-300 mb-6 leading-relaxed">
-                    See EVO in action and discover how it can revolutionize your production workflow.
-                  </p>
-                  <Link
-                    to="/contact-us"
-                    className="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-all font-bold border border-red-500"
-                  >
-                    <Activity size={20} />
-                    Schedule a Demo
-                    <ArrowRight size={20} />
-                  </Link>
-                </div>
               </div>
             </div>
           </div>
