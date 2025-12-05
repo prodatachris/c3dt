@@ -37,7 +37,10 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             The Future of 3D Printing is{' '}
-            <span className="bg-gradient-to-r from-red-600 via-red-500 to-orange-600 bg-clip-text text-transparent">
+            <span
+              className="bg-gradient-to-r from-red-600 via-red-500 to-orange-600 bg-clip-text text-transparent"
+              style={{ textShadow: '0 2px 8px rgba(220, 38, 38, 0.4), 0 0 20px rgba(220, 38, 38, 0.2)' }}
+            >
               All-In-One
             </span>
           </h1>
