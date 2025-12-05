@@ -81,14 +81,6 @@ export default function Home() {
 
       <Features />
 
-      <TechnologyShowcase />
-
-      <Innovations />
-
-      <FutureProof />
-
-      <PrintGallery />
-
       <section className="py-20 bg-gradient-to-b from-gray-900 to-black">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -131,6 +123,14 @@ export default function Home() {
           </button>
         </div>
       </section>
+
+      <TechnologyShowcase />
+
+      <Innovations />
+
+      <FutureProof />
+
+      <PrintGallery />
 
       <div id="contact">
         <Contact />
