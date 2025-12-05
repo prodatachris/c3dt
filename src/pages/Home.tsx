@@ -87,46 +87,6 @@ export default function Home() {
 
       <FutureProof />
 
-      <section className="py-24 bg-black relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
-
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
-          <div className="mb-12 text-center">
-            <div className="mb-6">
-              <span className="text-red-500 font-mono text-sm tracking-wider border border-red-900 px-4 py-2 rounded-full bg-red-950/30">
-                FACTORY-IN-A-BOX
-              </span>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              A Single-Cell 3D Printing Solution
-            </h2>
-            <p className="text-xl text-gray-300 leading-relaxed mb-6 max-w-4xl mx-auto">
-              Single-Cell manufacturing is a system capable of using multiple tools and production methods in one process. EVO is being designed as a factory-in-a-box that switches from tool-to-tool instead of machine-to-machine on a factory-line.
-            </p>
-          </div>
-
-          <div className="relative w-full mb-12">
-            <div className="relative rounded-2xl overflow-hidden border-2 border-gray-800 shadow-2xl">
-              <img
-                src="/evo_img.png"
-                alt="EVO Single-Cell 3D Printing Solution"
-                className="w-full h-auto object-cover"
-              />
-            </div>
-          </div>
-
-          <div className="flex items-start gap-4 p-6 bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl max-w-4xl mx-auto">
-            <div className="w-1 h-full bg-gradient-to-b from-red-600 to-red-900 rounded-full" />
-            <div>
-              <h3 className="text-white font-bold mb-2 text-lg">Revolutionary Efficiency</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                By consolidating multiple manufacturing steps into a single platform, EVO eliminates the need for material handling between machines, reduces production time, and minimizes floor space requirements.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <PrintGallery />
 
       <section className="py-20 bg-gradient-to-b from-gray-900 to-black">

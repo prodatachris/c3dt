@@ -62,20 +62,6 @@ export default function Innovations() {
             </div>
           ))}
         </div>
-
-        <div className="mt-16 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-12 text-center text-white">
-          <h3 className="text-3xl font-bold mb-4">See EVO in Action</h3>
-          <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-            Schedule a live demonstration at our Austin facility or request a virtual walkthrough
-            with our engineering team.
-          </p>
-          <a
-            href="#contact"
-            className="inline-block bg-red-600 text-white px-8 py-4 rounded-lg hover:bg-red-700 transition-all font-semibold"
-          >
-            Schedule Demo
-          </a>
-        </div>
       </div>
     </section>
   );
