@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Linkedin, Twitter, Youtube, Mail } from 'lucide-react';
+import { Linkedin, Twitter, Youtube, Mail, MapPin, Phone } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -43,7 +43,7 @@ export default function Footer() {
             <p className="text-gray-400 mb-8 leading-relaxed text-sm max-w-xs">
               Revolutionizing industrial 3D printing with innovative all-in-one manufacturing solutions.
             </p>
-            <div className="flex gap-3">
+            <div className="flex gap-3 mb-8">
               <a
                 href="https://linkedin.com"
                 target="_blank"
@@ -74,6 +74,22 @@ export default function Footer() {
               >
                 <Mail size={20} />
               </a>
+            </div>
+
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <MapPin size={18} className="text-red-500 flex-shrink-0 mt-0.5" />
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  1600 Dungan Ln Building 2<br />
+                  Austin, TX 78754
+                </p>
+              </div>
+              <div className="flex items-center gap-3">
+                <Phone size={18} className="text-red-500 flex-shrink-0" />
+                <a href="tel:+15128846575" className="text-gray-400 text-sm hover:text-red-500 transition-colors">
+                  +1 (512) 884-6575
+                </a>
+              </div>
             </div>
           </div>
 
