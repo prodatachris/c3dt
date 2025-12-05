@@ -543,8 +543,6 @@ export default function EVO() {
         </div>
       </section>
 
-      <PrintGallery />
-
       <section className="py-24 bg-black relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
 
@@ -585,6 +583,8 @@ export default function EVO() {
           </div>
         </div>
       </section>
+
+      <PrintGallery />
 
       <section className="py-24 bg-gradient-to-br from-gray-950 via-black to-black relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]" />
