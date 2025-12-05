@@ -106,8 +106,8 @@ export default function Contact() {
                   <div>
                     <div className="font-semibold text-white mb-1">Headquarters</div>
                     <div className="text-gray-400">
-                      Creative 3D Technologies, Inc.<br />
-                      Austin, Texas
+                      1600 Dungan Ln Building 2<br />
+                      Austin, TX 78754
                     </div>
                   </div>
                 </div>
@@ -130,8 +130,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-semibold text-white mb-1">Phone</div>
-                    <a href="tel:+1-555-0123" className="text-gray-400 hover:text-red-600 transition-colors">
-                      +1 (555) 012-3456
+                    <a href="tel:+15128846575" className="text-gray-400 hover:text-red-600 transition-colors">
+                      +1 (512) 884-6575
                     </a>
                   </div>
                 </div>

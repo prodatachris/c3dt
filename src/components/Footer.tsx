@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Linkedin, Twitter, Youtube, Mail, MapPin, Phone } from 'lucide-react';
+import { Linkedin, Twitter, Youtube, Mail } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -74,20 +74,6 @@ export default function Footer() {
               >
                 <Mail size={14} />
               </a>
-            </div>
-            <div className="space-y-2">
-              <div className="flex items-start gap-2">
-                <MapPin size={14} className="text-red-500 flex-shrink-0 mt-0.5" />
-                <p className="text-gray-400 text-xs leading-snug">
-                  1600 Dungan Ln Building 2, Austin, TX 78754
-                </p>
-              </div>
-              <div className="flex items-center gap-2">
-                <Phone size={14} className="text-red-500 flex-shrink-0" />
-                <a href="tel:+15128846575" className="text-gray-400 text-xs hover:text-red-500 transition-colors">
-                  +1 (512) 884-6575
-                </a>
-              </div>
             </div>
           </div>
 
