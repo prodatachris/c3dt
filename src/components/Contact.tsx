@@ -94,7 +94,7 @@ export default function Contact() {
             </form>
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-8 lg:-mt-1">
             <div className="bg-gray-900 p-8 rounded-xl shadow-lg border-2 border-gray-800">
               <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
 
