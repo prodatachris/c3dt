@@ -63,12 +63,12 @@ export default function Features() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group relative p-8 rounded-lg border-2 border-gray-800 hover:border-red-900 transition-all duration-300 bg-gradient-to-br from-gray-900 to-black overflow-hidden"
+              className="group relative p-8 rounded-lg border-2 border-gray-800 hover:border-red-900 transition-all duration-300 bg-gradient-to-br from-gray-900 to-black overflow-hidden flex flex-col h-full"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-red-600/5 rounded-full blur-2xl group-hover:bg-red-600/10 transition-all" />
               <div className="absolute -bottom-12 -left-12 w-32 h-32 bg-red-900/5 rounded-full blur-2xl" />
 
-              <div className="relative">
+              <div className="relative flex flex-col flex-grow">
                 <div className="flex items-start justify-between mb-6">
                   <div className="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg shadow-red-900/50">
                     <feature.icon className="text-white" size={32} />
@@ -81,13 +81,13 @@ export default function Features() {
                 <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-red-500 transition-colors">
                   {feature.title}
                 </h3>
-                <p className="text-gray-400 leading-relaxed mb-6">{feature.description}</p>
+                <p className="text-gray-400 leading-relaxed mb-6 flex-grow">{feature.description}</p>
 
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 items-center">
                   {feature.specs.map((spec, idx) => (
                     <span
                       key={idx}
-                      className="text-xs font-mono bg-gray-800 text-gray-300 px-3 py-1 rounded border border-gray-700"
+                      className="text-xs font-mono bg-gray-800 text-gray-300 px-3 py-1.5 rounded border border-gray-700 inline-flex items-center justify-center"
                     >
                       {spec}
                     </span>
