@@ -108,15 +108,15 @@ export default function EVO() {
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-red-600 mb-8 leading-tight drop-shadow-[0_2px_8px_rgba(220,38,38,0.8)]">
             EVO
           </h1>
 
-          <p className="text-2xl md:text-3xl text-gray-200 mb-6 font-light max-w-4xl mx-auto leading-relaxed">
+          <p className="text-2xl md:text-3xl text-white mb-6 font-light max-w-4xl mx-auto leading-relaxed drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]">
             The All-In-One Revolution
           </p>
 
-          <p className="text-xl text-gray-300 mb-12 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-xl text-white mb-12 leading-relaxed max-w-3xl mx-auto drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]">
             One platform. Multiple technologies. Unlimited possibilities. Transform your manufacturing
             facility with the world's first truly integrated 3D printing system.
           </p>
@@ -154,13 +154,6 @@ export default function EVO() {
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
-          <div className="flex flex-col items-center gap-2 text-white/60 animate-bounce">
-            <span className="text-xs font-mono">SCROLL TO EXPLORE</span>
-            <ArrowRight size={20} className="rotate-90" />
-          </div>
-        </div>
       </section>
 
       <section className="py-24 bg-gray-950 relative overflow-hidden">
@@ -350,6 +343,11 @@ export default function EVO() {
             </div>
 
             <div>
+              <div className="mb-8">
+                <span className="text-red-500 font-mono text-sm tracking-wider border border-red-900 px-4 py-2 rounded-full bg-red-950/30 opacity-0">
+                  PLACEHOLDER
+                </span>
+              </div>
               <h2 className="text-4xl font-bold text-white mb-8">Manufacturing Capabilities</h2>
               <div className="grid grid-cols-2 gap-3">
                 {capabilities.map((capability, index) => (
@@ -445,20 +443,13 @@ export default function EVO() {
               </table>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 pt-8 border-t-2 border-gray-800">
+            <div className="flex justify-center mt-8 pt-8 border-t-2 border-gray-800">
               <Link
                 to="/contact-us"
                 className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-all font-bold"
               >
                 <Download size={20} />
                 Download Full Spec Sheet (PDF)
-              </Link>
-              <Link
-                to="/contact-us"
-                className="inline-flex items-center justify-center gap-2 bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-all font-bold border border-gray-700"
-              >
-                <FileText size={20} />
-                Request Custom Configuration
               </Link>
             </div>
           </div>
@@ -628,8 +619,8 @@ export default function EVO() {
               },
               {
                 title: 'CAD Integration',
-                description: 'Direct plugins for major CAD platforms ensure seamless workflow from design to production.',
-                features: ['SolidWorks plugin', 'Fusion 360 support', 'AutoCAD compatibility', 'Rhino integration', 'Native file import', 'Automatic orientation']
+                description: 'Works with major CAD platforms to ensure seamless workflow from design to production.',
+                features: ['SolidWorks', 'Fusion 360', 'AutoCAD', 'Rhino', 'Native file import', 'Automatic orientation']
               },
               {
                 title: 'Slicing Engine',
