@@ -135,6 +135,56 @@ export default function Industrial() {
         </div>
       </section>
 
+      <section className="py-24 bg-black relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-red-500 font-mono text-sm tracking-wider border border-red-900 px-4 py-2 rounded-full bg-red-950/30">
+              FFF/FDM ADVANTAGES
+            </span>
+            <h2 className="text-4xl font-bold text-white mt-6 mb-6">
+              Why Industrial Manufacturing Relies on FFF Technology
+            </h2>
+            <p className="text-xl text-gray-400">
+              Fused Filament Fabrication delivers the durability, material properties, and production reliability that industrial applications demand.
+            </p>
+            <div className="h-1 w-24 bg-gradient-to-r from-red-600 to-transparent mx-auto mt-6" />
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="p-6 bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 hover:border-red-600 transition-all rounded-xl">
+              <Activity className="text-red-600 mb-4" size={32} />
+              <h3 className="text-xl font-bold text-white mb-3">Engineering-Grade Materials</h3>
+              <p className="text-gray-400 text-sm">
+                Access to high-performance polymers like Nylon, PEEK, ULTEM, and carbon fiber composites for functional parts.
+              </p>
+            </div>
+            <div className="p-6 bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 hover:border-red-600 transition-all rounded-xl">
+              <Gauge className="text-red-600 mb-4" size={32} />
+              <h3 className="text-xl font-bold text-white mb-3">Proven Reliability</h3>
+              <p className="text-gray-400 text-sm">
+                Mature technology with decades of industrial use. Predictable results and consistent part quality.
+              </p>
+            </div>
+            <div className="p-6 bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 hover:border-red-600 transition-all rounded-xl">
+              <Zap className="text-red-600 mb-4" size={32} />
+              <h3 className="text-xl font-bold text-white mb-3">Minimal Post-Processing</h3>
+              <p className="text-gray-400 text-sm">
+                Parts come off the build plate ready to use. No powder removal, washing, or curing required.
+              </p>
+            </div>
+            <div className="p-6 bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 hover:border-red-600 transition-all rounded-xl">
+              <Cpu className="text-red-600 mb-4" size={32} />
+              <h3 className="text-xl font-bold text-white mb-3">Tool-Less Changeover</h3>
+              <p className="text-gray-400 text-sm">
+                Switch between materials and technologies in minutes. No specialized tooling or fixtures needed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-24 bg-gray-950 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]" />
 

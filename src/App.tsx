@@ -16,6 +16,9 @@ import InvestorRelationsPage from './pages/InvestorRelations';
 import Creative from './pages/industries/Creative';
 import Industrial from './pages/industries/Industrial';
 import Education from './pages/industries/Education';
+import Aerospace from './pages/industries/Aerospace';
+import Automotive from './pages/industries/Automotive';
+import RapidPrototyping from './pages/industries/RapidPrototyping';
 
 function App() {
   return (
@@ -36,6 +39,9 @@ function App() {
           <Route path="/industries/creative" element={<Creative />} />
           <Route path="/industries/industrial" element={<Industrial />} />
           <Route path="/industries/education" element={<Education />} />
+          <Route path="/industries/aerospace" element={<Aerospace />} />
+          <Route path="/industries/automotive" element={<Automotive />} />
+          <Route path="/industries/rapid-prototyping" element={<RapidPrototyping />} />
         </Routes>
         <Footer />
       </div>

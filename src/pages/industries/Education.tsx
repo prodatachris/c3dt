@@ -101,6 +101,56 @@ export default function Education() {
         </div>
       </section>
 
+      <section className="py-24 bg-black relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-red-500 font-mono text-sm tracking-wider border border-red-900 px-4 py-2 rounded-full bg-red-950/30">
+              FFF/FDM FOR EDUCATION
+            </span>
+            <h2 className="text-4xl font-bold text-white mt-6 mb-6">
+              Why Educators Choose FFF Technology
+            </h2>
+            <p className="text-xl text-gray-400">
+              Fused Filament Fabrication provides the perfect balance of safety, affordability, and educational value for teaching environments.
+            </p>
+            <div className="h-1 w-24 bg-gradient-to-r from-red-600 to-transparent mx-auto mt-6" />
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="p-6 bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 hover:border-red-600 transition-all rounded-xl">
+              <Check className="text-red-600 mb-4" size={32} />
+              <h3 className="text-xl font-bold text-white mb-3">Classroom Safe</h3>
+              <p className="text-gray-400 text-sm">
+                No hazardous chemicals, powders, or resins. Clean, safe technology suitable for all educational settings.
+              </p>
+            </div>
+            <div className="p-6 bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 hover:border-red-600 transition-all rounded-xl">
+              <Check className="text-red-600 mb-4" size={32} />
+              <h3 className="text-xl font-bold text-white mb-3">Budget Friendly</h3>
+              <p className="text-gray-400 text-sm">
+                Lower operating costs than other 3D printing technologies. Maximize educational budgets with affordable materials.
+              </p>
+            </div>
+            <div className="p-6 bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 hover:border-red-600 transition-all rounded-xl">
+              <Check className="text-red-600 mb-4" size={32} />
+              <h3 className="text-xl font-bold text-white mb-3">Low Maintenance</h3>
+              <p className="text-gray-400 text-sm">
+                Simple upkeep that doesn't require dedicated technicians. Teachers and students can manage maintenance.
+              </p>
+            </div>
+            <div className="p-6 bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 hover:border-red-600 transition-all rounded-xl">
+              <Check className="text-red-600 mb-4" size={32} />
+              <h3 className="text-xl font-bold text-white mb-3">Industry Standard</h3>
+              <p className="text-gray-400 text-sm">
+                Students learn technology used in real manufacturing. Graduates enter workforce with relevant skills.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-24 bg-gray-950">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
