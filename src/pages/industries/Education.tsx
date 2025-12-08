@@ -406,6 +406,606 @@ export default function Education() {
       </section>
 
       <section className="py-24 bg-gray-950">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-red-500 font-mono text-sm tracking-wider border border-red-900 px-4 py-2 rounded-full bg-red-950/30">
+              EDUCATIONAL SUCCESS STORIES
+            </span>
+            <h2 className="text-4xl font-bold text-white mt-6 mb-6">
+              Real Results from Educational Institutions Using 3D Printing
+            </h2>
+            <p className="text-xl text-gray-400">
+              See how universities and technical schools are transforming their additive manufacturing programs with EVO's 3D printing platform.
+            </p>
+            <div className="h-1 w-24 bg-gradient-to-r from-red-600 to-transparent mx-auto mt-6" />
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <GraduationCap className="text-red-600" size={32} />
+                <div>
+                  <h3 className="text-xl font-bold text-white">State University</h3>
+                  <p className="text-sm text-gray-500">Mechanical Engineering</p>
+                </div>
+              </div>
+              <div className="space-y-4 mb-6">
+                <div className="bg-black/50 rounded-lg p-4 border border-gray-800">
+                  <div className="text-3xl font-bold text-red-600 mb-1">300%</div>
+                  <div className="text-sm text-gray-400">Increase in Student Throughput</div>
+                </div>
+                <div className="bg-black/50 rounded-lg p-4 border border-gray-800">
+                  <div className="text-3xl font-bold text-red-600 mb-1">$180K</div>
+                  <div className="text-sm text-gray-400">Annual Lab Cost Savings</div>
+                </div>
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                "Replaced 6 specialized 3D printers with one EVO platform. Students now learn FDM, advanced materials, and rapid prototyping
+                in a unified curriculum. Lab utilization increased 3x while maintenance costs dropped 65%."
+              </p>
+              <div className="flex items-center gap-2 text-gray-500 text-xs">
+                <Award size={14} className="text-red-600" />
+                <span>ABET Accredited Program</span>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <BookOpen className="text-red-600" size={32} />
+                <div>
+                  <h3 className="text-xl font-bold text-white">Technical College</h3>
+                  <p className="text-sm text-gray-500">Advanced Manufacturing</p>
+                </div>
+              </div>
+              <div className="space-y-4 mb-6">
+                <div className="bg-black/50 rounded-lg p-4 border border-gray-800">
+                  <div className="text-3xl font-bold text-red-600 mb-1">95%</div>
+                  <div className="text-sm text-gray-400">Graduate Employment Rate</div>
+                </div>
+                <div className="bg-black/50 rounded-lg p-4 border border-gray-800">
+                  <div className="text-3xl font-bold text-red-600 mb-1">24/7</div>
+                  <div className="text-sm text-gray-400">Lab Access for Students</div>
+                </div>
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                "EVO transformed our certificate program. Students graduate with industrial 3D printing experience employers value.
+                Remote job submission means students can run projects overnight. Placement rate improved 40% since adoption."
+              </p>
+              <div className="flex items-center gap-2 text-gray-500 text-xs">
+                <Award size={14} className="text-red-600" />
+                <span>Industry Partnership Program</span>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <Microscope className="text-red-600" size={32} />
+                <div>
+                  <h3 className="text-xl font-bold text-white">Research Institute</h3>
+                  <p className="text-sm text-gray-500">Materials Science</p>
+                </div>
+              </div>
+              <div className="space-y-4 mb-6">
+                <div className="bg-black/50 rounded-lg p-4 border border-gray-800">
+                  <div className="text-3xl font-bold text-red-600 mb-1">12</div>
+                  <div className="text-sm text-gray-400">Research Papers Published</div>
+                </div>
+                <div className="bg-black/50 rounded-lg p-4 border border-gray-800">
+                  <div className="text-3xl font-bold text-red-600 mb-1">50+</div>
+                  <div className="text-sm text-gray-400">Material Combinations Tested</div>
+                </div>
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                "EVO's multi-material capability enables advanced composite research impossible with single-technology platforms.
+                Graduate students explore novel material combinations. Published 12 papers on additive manufacturing in first year."
+              </p>
+              <div className="flex items-center gap-2 text-gray-500 text-xs">
+                <Award size={14} className="text-red-600" />
+                <span>NSF Grant Recipient</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-black">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-red-500 font-mono text-sm tracking-wider border border-red-900 px-4 py-2 rounded-full bg-red-950/30">
+              CURRICULUM INTEGRATION
+            </span>
+            <h2 className="text-4xl font-bold text-white mt-6 mb-6">
+              Seamless Integration into Your 3D Printing Curriculum
+            </h2>
+            <p className="text-xl text-gray-400">
+              EVO fits naturally into existing manufacturing, engineering, and design programs with comprehensive curriculum support.
+            </p>
+            <div className="h-1 w-24 bg-gradient-to-r from-red-600 to-transparent mx-auto mt-6" />
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-start mb-16">
+            <div className="space-y-6">
+              <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-red-950 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <FileText className="text-red-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-3">Course Materials & Lab Guides</h3>
+                    <p className="text-gray-400 mb-4 leading-relaxed">
+                      Comprehensive lab manuals, lecture slides, and project templates designed for semester-long courses.
+                      Cover additive manufacturing fundamentals, design for 3D printing, material selection, and post-processing.
+                    </p>
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2 text-sm text-gray-300">
+                        <Check className="text-red-600" size={16} />
+                        <span>12-week curriculum framework</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm text-gray-300">
+                        <Check className="text-red-600" size={16} />
+                        <span>20+ hands-on lab exercises</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm text-gray-300">
+                        <Check className="text-red-600" size={16} />
+                        <span>Assessment rubrics and grading guides</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-red-950 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Video className="text-red-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-3">Video Training Library</h3>
+                    <p className="text-gray-400 mb-4 leading-relaxed">
+                      Professional video tutorials covering operation, maintenance, troubleshooting, and advanced techniques.
+                      Students can learn at their own pace with on-demand access to training materials.
+                    </p>
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2 text-sm text-gray-300">
+                        <Check className="text-red-600" size={16} />
+                        <span>50+ instructional videos</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm text-gray-300">
+                        <Check className="text-red-600" size={16} />
+                        <span>Step-by-step project walkthroughs</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm text-gray-300">
+                        <Check className="text-red-600" size={16} />
+                        <span>Troubleshooting and maintenance guides</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-red-950 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Users className="text-red-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-3">Faculty Development Workshops</h3>
+                    <p className="text-gray-400 mb-4 leading-relaxed">
+                      Comprehensive training programs for instructors. Learn pedagogical best practices for teaching additive
+                      manufacturing and integrating EVO into existing courses across multiple disciplines.
+                    </p>
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2 text-sm text-gray-300">
+                        <Check className="text-red-600" size={16} />
+                        <span>On-site faculty training workshops</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm text-gray-300">
+                        <Check className="text-red-600" size={16} />
+                        <span>Online instructor certification program</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm text-gray-300">
+                        <Check className="text-red-600" size={16} />
+                        <span>Ongoing technical support hotline</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div className="bg-gradient-to-br from-red-950 to-gray-900 border-2 border-red-800 rounded-xl p-8">
+                <h3 className="text-2xl font-bold text-white mb-4">Sample Course Outline</h3>
+                <p className="text-gray-300 mb-6 text-sm">
+                  Introduction to Additive Manufacturing - 16 Week Semester Course
+                </p>
+                <div className="space-y-3">
+                  <div className="bg-black/50 rounded-lg p-4 border border-gray-800">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-white font-semibold text-sm">Weeks 1-3</span>
+                      <span className="text-xs text-gray-500 font-mono">FUNDAMENTALS</span>
+                    </div>
+                    <p className="text-gray-400 text-sm">3D printing history, technologies, materials overview, design principles</p>
+                  </div>
+                  <div className="bg-black/50 rounded-lg p-4 border border-gray-800">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-white font-semibold text-sm">Weeks 4-6</span>
+                      <span className="text-xs text-gray-500 font-mono">CAD & SLICING</span>
+                    </div>
+                    <p className="text-gray-400 text-sm">CAD for additive manufacturing, slicing software, support structures, orientation</p>
+                  </div>
+                  <div className="bg-black/50 rounded-lg p-4 border border-gray-800">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-white font-semibold text-sm">Weeks 7-9</span>
+                      <span className="text-xs text-gray-500 font-mono">MATERIALS</span>
+                    </div>
+                    <p className="text-gray-400 text-sm">Material properties, selection criteria, testing methods, quality control</p>
+                  </div>
+                  <div className="bg-black/50 rounded-lg p-4 border border-gray-800">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-white font-semibold text-sm">Weeks 10-12</span>
+                      <span className="text-xs text-gray-500 font-mono">APPLICATIONS</span>
+                    </div>
+                    <p className="text-gray-400 text-sm">Rapid prototyping, tooling, end-use parts, industry case studies</p>
+                  </div>
+                  <div className="bg-black/50 rounded-lg p-4 border border-gray-800">
+                    <div className="flex justify-between items-center mb-2">
+                      <span className="text-white font-semibold text-sm">Weeks 13-16</span>
+                      <span className="text-xs text-gray-500 font-mono">CAPSTONE</span>
+                    </div>
+                    <p className="text-gray-400 text-sm">Final project: design, print, test functional prototype presentation</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8">
+                <h3 className="text-xl font-bold text-white mb-4">Student Project Ideas</h3>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0" />
+                    <div>
+                      <p className="text-white font-semibold text-sm mb-1">Functional Mechanical Assembly</p>
+                      <p className="text-gray-400 text-xs">Design and print multi-part mechanism with moving components</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0" />
+                    <div>
+                      <p className="text-white font-semibold text-sm mb-1">Topology-Optimized Bracket</p>
+                      <p className="text-gray-400 text-xs">Apply generative design for maximum strength-to-weight ratio</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0" />
+                    <div>
+                      <p className="text-white font-semibold text-sm mb-1">Custom Manufacturing Jig</p>
+                      <p className="text-gray-400 text-xs">Create specialized tooling for specific assembly or inspection task</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0" />
+                    <div>
+                      <p className="text-white font-semibold text-sm mb-1">Assistive Device Prototype</p>
+                      <p className="text-gray-400 text-xs">Design accessibility aid or medical device prototype</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0" />
+                    <div>
+                      <p className="text-white font-semibold text-sm mb-1">Drone Component Redesign</p>
+                      <p className="text-gray-400 text-xs">Optimize existing UAV part for 3D printing manufacturing</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-gray-950">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-red-500 font-mono text-sm tracking-wider border border-red-900 px-4 py-2 rounded-full bg-red-950/30">
+              EDUCATIONAL ROI
+            </span>
+            <h2 className="text-4xl font-bold text-white mt-6 mb-6">
+              Cost Savings Analysis for Educational 3D Printing Labs
+            </h2>
+            <p className="text-xl text-gray-400">
+              One EVO platform replaces multiple specialized machines while reducing operational costs across the entire program lifecycle.
+            </p>
+            <div className="h-1 w-24 bg-gradient-to-r from-red-600 to-transparent mx-auto mt-6" />
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <Calculator className="text-red-600" size={32} />
+                <h3 className="text-2xl font-bold text-white">Traditional Multi-Printer Lab</h3>
+              </div>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center py-3 border-b border-gray-800">
+                  <span className="text-gray-400">6x FDM Printers ($3K each)</span>
+                  <span className="text-white font-bold">$18,000</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-gray-800">
+                  <span className="text-gray-400">2x Resin Printers ($5K each)</span>
+                  <span className="text-white font-bold">$10,000</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-gray-800">
+                  <span className="text-gray-400">Annual Maintenance (8 machines)</span>
+                  <span className="text-white font-bold">$4,800</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-gray-800">
+                  <span className="text-gray-400">Training & Support (8 platforms)</span>
+                  <span className="text-white font-bold">$6,000</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-gray-800">
+                  <span className="text-gray-400">Floor Space (800 sq ft @ $50/sq ft)</span>
+                  <span className="text-white font-bold">$40,000</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-gray-800">
+                  <span className="text-gray-400">Lab Technician (20hrs/week)</span>
+                  <span className="text-white font-bold">$25,000</span>
+                </div>
+                <div className="flex justify-between items-center pt-4 mt-4 border-t-2 border-red-800">
+                  <span className="text-white font-bold text-lg">5-Year Total Cost</span>
+                  <span className="text-red-600 font-bold text-2xl">$413,000</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-red-950 to-gray-900 border-2 border-red-800 rounded-xl p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <TrendingUp className="text-red-600" size={32} />
+                <h3 className="text-2xl font-bold text-white">Single EVO Platform Lab</h3>
+              </div>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center py-3 border-b border-red-900">
+                  <span className="text-gray-300">1x EVO Platform (Educational)</span>
+                  <span className="text-white font-bold">$35,000</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-red-900">
+                  <span className="text-gray-300">Annual Maintenance (1 machine)</span>
+                  <span className="text-white font-bold">$1,200</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-red-900">
+                  <span className="text-gray-300">Training & Support (1 platform)</span>
+                  <span className="text-white font-bold">$2,000</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-red-900">
+                  <span className="text-gray-300">Floor Space (200 sq ft @ $50/sq ft)</span>
+                  <span className="text-white font-bold">$10,000</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-red-900">
+                  <span className="text-gray-300">Lab Technician (5hrs/week)</span>
+                  <span className="text-white font-bold">$6,250</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-red-900">
+                  <span className="text-gray-300">Curriculum Materials (included)</span>
+                  <span className="text-white font-bold">$0</span>
+                </div>
+                <div className="flex justify-between items-center pt-4 mt-4 border-t-2 border-red-600">
+                  <span className="text-white font-bold text-lg">5-Year Total Cost</span>
+                  <span className="text-green-500 font-bold text-2xl">$132,250</span>
+                </div>
+              </div>
+              <div className="mt-6 bg-green-950/30 border-2 border-green-800 rounded-lg p-4 text-center">
+                <div className="text-3xl font-bold text-green-500 mb-1">$280,750</div>
+                <div className="text-green-400 text-sm font-semibold">TOTAL SAVINGS OVER 5 YEARS</div>
+                <div className="text-gray-400 text-xs mt-2">68% reduction in total cost of ownership</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-6">
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-6 text-center">
+              <DollarSign className="text-red-600 mx-auto mb-3" size={32} />
+              <div className="text-3xl font-bold text-white mb-2">75%</div>
+              <p className="text-gray-400 text-sm">Lower Maintenance Costs</p>
+            </div>
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-6 text-center">
+              <Users className="text-red-600 mx-auto mb-3" size={32} />
+              <div className="text-3xl font-bold text-white mb-2">3x</div>
+              <p className="text-gray-400 text-sm">Student Throughput</p>
+            </div>
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-6 text-center">
+              <Layers className="text-red-600 mx-auto mb-3" size={32} />
+              <div className="text-3xl font-bold text-white mb-2">75%</div>
+              <p className="text-gray-400 text-sm">Less Floor Space</p>
+            </div>
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-6 text-center">
+              <Clock className="text-red-600 mx-auto mb-3" size={32} />
+              <div className="text-3xl font-bold text-white mb-2">80%</div>
+              <p className="text-gray-400 text-sm">Reduced Admin Time</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-black">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-red-500 font-mono text-sm tracking-wider border border-red-900 px-4 py-2 rounded-full bg-red-950/30">
+              MATERIALS LIBRARY
+            </span>
+            <h2 className="text-4xl font-bold text-white mt-6 mb-6">
+              Comprehensive Material Options for Educational 3D Printing
+            </h2>
+            <p className="text-xl text-gray-400">
+              Teach students material science fundamentals with access to industrial-grade polymers, composites, and specialty filaments.
+            </p>
+            <div className="h-1 w-24 bg-gradient-to-r from-red-600 to-transparent mx-auto mt-6" />
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 hover:border-red-600 transition-all rounded-xl p-6">
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-1">PLA</h3>
+                  <p className="text-xs text-gray-500 font-mono">ENTRY-LEVEL</p>
+                </div>
+                <Star className="text-yellow-500" size={20} />
+              </div>
+              <div className="space-y-2 mb-4">
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-400">Print Temp</span>
+                  <span className="text-white">190-220°C</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-400">Difficulty</span>
+                  <span className="text-green-500">Easy</span>
+                </div>
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                Perfect for beginners. Teach fundamentals of 3D printing with easy-to-print biodegradable material. Available in 20+ colors.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs px-2 py-1 bg-gray-800 text-gray-300 rounded">Prototyping</span>
+                <span className="text-xs px-2 py-1 bg-gray-800 text-gray-300 rounded">Visual Models</span>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 hover:border-red-600 transition-all rounded-xl p-6">
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-1">PETG</h3>
+                  <p className="text-xs text-gray-500 font-mono">INTERMEDIATE</p>
+                </div>
+                <Star className="text-yellow-500" size={20} />
+              </div>
+              <div className="space-y-2 mb-4">
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-400">Print Temp</span>
+                  <span className="text-white">230-250°C</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-400">Difficulty</span>
+                  <span className="text-yellow-500">Moderate</span>
+                </div>
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                Balance of strength and ease. Teach intermediate concepts with durable, chemical-resistant material suitable for functional parts.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs px-2 py-1 bg-gray-800 text-gray-300 rounded">Functional Parts</span>
+                <span className="text-xs px-2 py-1 bg-gray-800 text-gray-300 rounded">Tooling</span>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 hover:border-red-600 transition-all rounded-xl p-6">
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-1">ABS</h3>
+                  <p className="text-xs text-gray-500 font-mono">INTERMEDIATE</p>
+                </div>
+                <Star className="text-yellow-500" size={20} />
+              </div>
+              <div className="space-y-2 mb-4">
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-400">Print Temp</span>
+                  <span className="text-white">240-260°C</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-400">Difficulty</span>
+                  <span className="text-yellow-500">Moderate</span>
+                </div>
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                Industrial standard material. Teach professional workflows with heat-resistant, impact-resistant polymer used in manufacturing.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs px-2 py-1 bg-gray-800 text-gray-300 rounded">High Temp</span>
+                <span className="text-xs px-2 py-1 bg-gray-800 text-gray-300 rounded">Automotive</span>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 hover:border-red-600 transition-all rounded-xl p-6">
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-1">Nylon</h3>
+                  <p className="text-xs text-gray-500 font-mono">ADVANCED</p>
+                </div>
+                <Zap className="text-red-600" size={20} />
+              </div>
+              <div className="space-y-2 mb-4">
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-400">Print Temp</span>
+                  <span className="text-white">250-270°C</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-400">Difficulty</span>
+                  <span className="text-red-500">Advanced</span>
+                </div>
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                High-performance engineering polymer. Exceptional strength, flexibility, and wear resistance for demanding applications.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs px-2 py-1 bg-gray-800 text-gray-300 rounded">Engineering</span>
+                <span className="text-xs px-2 py-1 bg-gray-800 text-gray-300 rounded">Durable Parts</span>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 hover:border-red-600 transition-all rounded-xl p-6">
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-1">TPU Flexible</h3>
+                  <p className="text-xs text-gray-500 font-mono">SPECIALTY</p>
+                </div>
+                <Zap className="text-red-600" size={20} />
+              </div>
+              <div className="space-y-2 mb-4">
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-400">Print Temp</span>
+                  <span className="text-white">210-230°C</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-400">Difficulty</span>
+                  <span className="text-yellow-500">Moderate</span>
+                </div>
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                Rubber-like elastomer material. Teach students about flexible materials for gaskets, seals, and vibration dampening.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs px-2 py-1 bg-gray-800 text-gray-300 rounded">Flexible</span>
+                <span className="text-xs px-2 py-1 bg-gray-800 text-gray-300 rounded">Seals</span>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-red-950 to-gray-900 border-2 border-red-800 rounded-xl p-6">
+              <div className="flex items-start justify-between mb-4">
+                <div>
+                  <h3 className="text-lg font-bold text-white mb-1">Carbon Fiber</h3>
+                  <p className="text-xs text-gray-500 font-mono">COMPOSITE</p>
+                </div>
+                <Award className="text-red-600" size={20} />
+              </div>
+              <div className="space-y-2 mb-4">
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-300">Print Temp</span>
+                  <span className="text-white">260-290°C</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-300">Difficulty</span>
+                  <span className="text-red-500">Expert</span>
+                </div>
+              </div>
+              <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                Advanced composite material. Teach aerospace and automotive applications with exceptional strength-to-weight ratio.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs px-2 py-1 bg-black text-gray-300 rounded">Aerospace</span>
+                <span className="text-xs px-2 py-1 bg-black text-gray-300 rounded">Racing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-gray-950">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <div className="bg-gradient-to-br from-red-950 to-gray-900 rounded-2xl p-12 border-2 border-red-800 text-center">
             <h2 className="text-4xl font-bold text-white mb-6">
