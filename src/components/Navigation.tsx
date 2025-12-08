@@ -26,24 +26,21 @@ export default function Navigation() {
   }, [location]);
 
   const platforms = [
-    { name: 'EVO', href: '#', description: 'Current generation' },
-    { name: 'DUO', href: '#', description: 'Discontinued' },
-    { name: 'DYAD', href: '#', description: 'Coming 2027' },
+    { name: 'EVO', href: '/evo', description: 'Current generation' },
+    { name: 'DUO', href: '/duo', description: 'Discontinued' },
+    { name: 'DYAD', href: '/dyad', description: 'Coming 2027' },
   ];
 
   const knowledge = [
-    { name: 'News', href: '#' },
-    { name: 'Events', href: '#' },
-    { name: 'Setup Resources', href: '#' },
+    { name: 'News', href: '/news' },
+    { name: 'Events', href: '/events' },
+    { name: 'Setup Resources', href: '/setup-resources' },
   ];
 
   const industries = [
-    { name: 'Creative', href: '#' },
-    { name: 'Industrial', href: '#' },
-    { name: 'Education', href: '#' },
-    { name: 'Aerospace', href: '#' },
-    { name: 'Automotive', href: '#' },
-    { name: 'Rapid Prototyping', href: '#' },
+    { name: 'Creative', href: '/industries/creative' },
+    { name: 'Industrial', href: '/industries/industrial' },
+    { name: 'Education', href: '/industries/education' },
   ];
 
   return (
@@ -120,21 +117,21 @@ export default function Navigation() {
               </div>
 
               <Link
-                to="#"
+                to="/maintenance"
                 className="text-gray-300 hover:text-red-600 font-medium transition-colors"
               >
                 Support
               </Link>
 
               <Link
-                to="#"
+                to="/investor-relations"
                 className="text-gray-300 hover:text-red-600 font-medium transition-colors"
               >
                 Investors
               </Link>
 
               <Link
-                to="#"
+                to="/contact-us"
                 className="bg-red-600 text-white px-6 py-2.5 rounded-lg hover:bg-red-700 transition-colors font-medium"
               >
                 Contact Us
@@ -224,21 +221,21 @@ export default function Navigation() {
             </div>
 
             <Link
-              to="#"
+              to="/maintenance"
               className="block text-xl font-semibold text-white hover:text-red-600 transition-colors"
             >
               Support
             </Link>
 
             <Link
-              to="#"
+              to="/investor-relations"
               className="block text-xl font-semibold text-white hover:text-red-600 transition-colors"
             >
               Investors
             </Link>
 
             <Link
-              to="#"
+              to="/contact-us"
               className="block w-full bg-red-600 text-white text-center px-6 py-4 rounded-lg font-semibold text-lg hover:bg-red-700 transition-colors"
             >
               Contact Us
