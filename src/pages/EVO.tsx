@@ -476,9 +476,9 @@ export default function EVO() {
                 </h3>
                 <ul className="space-y-2">
                   {group.materials.map((material, idx) => (
-                    <li key={idx} className="text-sm text-gray-400 flex items-center gap-2">
-                      <span className="text-red-600">→</span>
-                      {material}
+                    <li key={idx} className="text-sm text-gray-400 flex items-start gap-2">
+                      <span className="text-red-600 flex-shrink-0">→</span>
+                      <span>{material}</span>
                     </li>
                   ))}
                 </ul>
@@ -560,7 +560,7 @@ export default function EVO() {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-red-950/50 to-gray-900/50 border-2 border-red-800/50 rounded-2xl p-12 mb-8">
+          <div className="bg-gradient-to-r from-red-950/50 to-gray-900/50 border-2 border-red-800/50 rounded-2xl p-12">
             <div className="flex items-start gap-6">
               <div className="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center flex-shrink-0">
                 <TrendingUp className="text-white" size={32} />
@@ -572,23 +572,6 @@ export default function EVO() {
                 </p>
               </div>
             </div>
-          </div>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/contact-us"
-              className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg hover:bg-red-700 transition-all font-bold text-lg border border-red-500"
-            >
-              <DollarSign size={20} />
-              Calculate Your ROI
-            </Link>
-            <Link
-              to="/contact-us"
-              className="inline-flex items-center justify-center gap-2 bg-gray-800 text-white px-8 py-4 rounded-lg hover:bg-gray-700 transition-all font-bold text-lg border border-gray-700"
-            >
-              Request Pricing
-              <ArrowRight size={20} />
-            </Link>
           </div>
         </div>
       </section>
@@ -664,84 +647,6 @@ export default function EVO() {
         </div>
       </section>
 
-      <section className="py-24 bg-gradient-to-br from-gray-950 via-black to-gray-950 relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]" />
-
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-red-500 font-mono text-sm tracking-wider border border-red-900 px-4 py-2 rounded-full bg-red-950/30">
-              SUPPORT & TRAINING
-            </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mt-6 mb-6">
-              World-Class Support & Training
-            </h2>
-            <p className="text-xl text-gray-400">
-              From installation to advanced operations, our comprehensive support ensures you maximize
-              your EVO investment from day one.
-            </p>
-            <div className="h-1 w-24 bg-gradient-to-r from-red-600 to-transparent mx-auto mt-6" />
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {[
-              {
-                title: 'Installation & Setup',
-                items: ['White-glove delivery', 'Professional installation', 'Full calibration', 'Network configuration', 'Initial test prints', 'Documentation handoff']
-              },
-              {
-                title: 'Training Programs',
-                items: ['On-site training', 'Virtual sessions', 'Certification courses', 'Advanced workshops', 'Material training', 'Maintenance training']
-              },
-              {
-                title: 'Technical Support',
-                items: ['24/7 phone support', 'Email support', 'Live chat', 'Remote diagnostics', 'Emergency service', 'Dedicated account manager']
-              },
-              {
-                title: 'Maintenance Services',
-                items: ['Preventive maintenance', 'Annual inspections', 'Parts replacement', 'Calibration services', 'Software updates', 'Performance optimization']
-              },
-              {
-                title: 'Resources Library',
-                items: ['Video tutorials', 'User manuals', 'Material guides', 'Best practices', 'Troubleshooting docs', 'Community forums']
-              },
-              {
-                title: 'Warranty & Protection',
-                items: ['Standard warranty', 'Extended coverage', 'Parts protection', 'Labor coverage', 'Loaner programs', 'Upgrade paths']
-              }
-            ].map((support, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-6 hover:border-red-900 transition-all">
-                <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                  <Shield className="text-red-600" size={24} />
-                  {support.title}
-                </h3>
-                <ul className="space-y-3">
-                  {support.items.map((item, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-sm text-gray-400">
-                      <Check className="text-red-600 flex-shrink-0 mt-1" size={16} />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-
-          <div className="bg-gradient-to-r from-red-950/50 to-gray-900/50 border-2 border-red-800/50 rounded-2xl p-12 text-center">
-            <h3 className="text-3xl font-bold text-white mb-4">Comprehensive Support Package</h3>
-            <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Every EVO purchase includes a complete support package with installation, training, and ongoing
-              technical assistance. We're committed to your success every step of the way.
-            </p>
-            <Link
-              to="/contact-us"
-              className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg hover:bg-red-700 transition-all font-bold border border-red-500"
-            >
-              Learn About Support Options <ArrowRight size={20} />
-            </Link>
-          </div>
-        </div>
-      </section>
-
       <section className="py-24 bg-black relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
 
@@ -801,9 +706,9 @@ export default function EVO() {
                   <p className="text-gray-400 mb-6 leading-relaxed">{app.description}</p>
                   <div className="grid grid-cols-2 gap-3">
                     {app.applications.map((application, idx) => (
-                      <div key={idx} className="flex items-center gap-2 text-sm text-gray-500">
-                        <span className="text-red-600">→</span>
-                        {application}
+                      <div key={idx} className="flex items-start gap-2 text-sm text-gray-500">
+                        <span className="text-red-600 flex-shrink-0">→</span>
+                        <span>{application}</span>
                       </div>
                     ))}
                   </div>
