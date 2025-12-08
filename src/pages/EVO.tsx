@@ -64,90 +64,50 @@ export default function EVO() {
   ];
 
   return (
-    <div className="pt-20 bg-black min-h-screen">
-      <section className="py-24 bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
-        <div className="absolute top-1/4 right-0 w-96 h-96 bg-red-600/10 rounded-full blur-3xl" />
-
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+    <div className="pt-20 min-h-screen">
+      <section className="py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 mb-6 bg-gradient-to-r from-red-950/50 to-red-900/50 border border-red-800/50 rounded-full px-6 py-3 backdrop-blur-sm">
-                <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse" />
-                <span className="text-red-500 text-sm font-bold tracking-wide font-mono">
-                  FLAGSHIP PLATFORM
-                </span>
-              </div>
-
-              <div className="mb-4">
-                <span className="text-gray-500 text-lg font-mono tracking-wider">[ MODEL: EVO-001 ]</span>
-              </div>
-
-              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-                EVO: The All-In-One Revolution
+              <h1 className="text-6xl md:text-7xl font-bold text-black mb-8 leading-tight">
+                Meet EVO
               </h1>
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                EVO represents the culmination of years of engineering innovation. One platform.
-                Multiple technologies. Unlimited possibilities. Transform your manufacturing facility
-                with the world's first truly integrated 3D printing system.
+
+              <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-8">
+                This is EVO
+              </h2>
+
+              <p className="text-xl text-gray-700 mb-6 leading-relaxed">
+                Built for acceleration, tolerance, precision, accuracy, reliability, rigidity, and
+                modularity far exceeding the industry's current needs.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <Link
-                  to="/contact-us"
-                  className="group bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-lg hover:from-red-700 hover:to-red-800 transition-all font-bold text-lg flex items-center justify-center gap-2 border border-red-500"
-                >
-                  <Zap size={20} />
-                  Request a Demo
-                  <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-                </Link>
-                <a
-                  href="#specifications"
-                  className="bg-gray-900 text-white px-8 py-4 rounded-lg hover:bg-gray-800 transition-all font-bold text-lg border-2 border-gray-700 text-center"
-                >
-                  View Specifications
-                </a>
-              </div>
+              <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+                EVO is an entire specialty 3D print shop all in a single affordable system. A multi-purpose
+                manufacturing platform designed to evolve with your needs.
+              </p>
 
-              <div className="grid grid-cols-3 gap-4">
-                <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-lg p-4 text-center hover:border-red-900 transition-all">
-                  <div className="text-3xl font-bold text-red-600">Multiple</div>
-                  <div className="text-gray-400 text-sm font-mono mt-1">TECH</div>
-                </div>
-                <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-lg p-4 text-center hover:border-red-900 transition-all">
-                  <div className="text-3xl font-bold text-red-600">High</div>
-                  <div className="text-gray-400 text-sm font-mono mt-1">EFFICIENCY</div>
-                </div>
-                <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-lg p-4 text-center hover:border-red-900 transition-all">
-                  <div className="text-3xl font-bold text-red-600">Wide</div>
-                  <div className="text-gray-400 text-sm font-mono mt-1">RANGE</div>
-                </div>
-              </div>
+              <Link
+                to="/contact-us"
+                className="inline-flex items-center gap-3 bg-red-600 text-white px-8 py-4 rounded-lg hover:bg-red-700 transition-all font-bold text-lg shadow-lg"
+              >
+                <Download size={24} />
+                DOWNLOAD BROCHURE
+              </Link>
             </div>
 
             <div className="relative">
-              <div className="aspect-square bg-gray-900 rounded-2xl shadow-2xl overflow-hidden flex items-center justify-center p-8 border-2 border-gray-800 relative">
-                <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:30px_30px]" />
-                <div className="absolute top-4 left-4 bg-gray-900/90 border border-gray-800 rounded px-3 py-1">
-                  <span className="text-xs text-gray-400 font-mono">EVO-001</span>
-                </div>
-                <img
-                  src="https://cdn.prod.website-files.com/6667650acd969c112f9a8ac5/66df4f0c113a487fc309af04_evo_image.webp"
-                  alt="EVO Platform 3D Printer"
-                  className="w-full h-full object-contain relative z-10"
-                />
-                <div className="absolute bottom-4 right-4 bg-gray-900/90 border border-gray-800 rounded px-3 py-1 flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                  <span className="text-xs text-gray-400 font-mono">OPERATIONAL</span>
-                </div>
-              </div>
+              <img
+                src="https://cdn.prod.website-files.com/6667650acd969c112f9a8ac5/66df4f0c113a487fc309af04_evo_image.webp"
+                alt="EVO Platform 3D Printer"
+                className="w-full h-auto"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-24 bg-gray-950 relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-b from-white to-gray-950 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:60px_60px]" />
 
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
