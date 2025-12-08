@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import PrintGallery from '../components/PrintGallery';
 
 export default function EVO() {
+  const [videoError, setVideoError] = React.useState(false);
+
   const specifications = [
     { label: 'Build Volume', value: 'Large', unit: 'Capacity', icon: Box },
     { label: 'Technologies', value: 'Multiple', unit: 'Integrated', icon: Cpu },
@@ -65,84 +67,98 @@ export default function EVO() {
 
   return (
     <div className="pt-20 bg-black min-h-screen">
-      <section className="py-24 bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
-        <div className="absolute top-1/4 right-0 w-96 h-96 bg-red-600/10 rounded-full blur-3xl" />
+      {/* Hero Section with Video Background */}
+      <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+        {/* Video Background */}
+        <div className="absolute inset-0 w-full h-full">
+          {!videoError ? (
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              crossOrigin="anonymous"
+              className="absolute inset-0 w-full h-full object-cover"
+              onError={() => setVideoError(true)}
+            >
+              <source
+                src="https://cdn.prod.website-files.com/6667650acd969c112f9a8ac5%2F66b145780c63e201531d3785_C3DT_WebBanner_EVO_50sec_HD1080_optimized-transcode.mp4"
+                type="video/mp4"
+              />
+            </video>
+          ) : (
+            <img
+              src="https://cdn.prod.website-files.com/6667650acd969c112f9a8ac5/66df4f0c113a487fc309af04_evo_image.webp"
+              alt="EVO Platform 3D Printer"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          )}
 
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 mb-6 bg-gradient-to-r from-red-950/50 to-red-900/50 border border-red-800/50 rounded-full px-6 py-3 backdrop-blur-sm">
-                <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse" />
-                <span className="text-red-500 text-sm font-bold tracking-wide font-mono">
-                  FLAGSHIP PLATFORM
-                </span>
-              </div>
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/60" />
+        </div>
 
-              <div className="mb-4">
-                <span className="text-gray-500 text-lg font-mono tracking-wider">[ MODEL: EVO-001 ]</span>
-              </div>
+        {/* Hero Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
+          <div className="inline-flex items-center gap-2 mb-6 bg-gradient-to-r from-red-950/80 to-red-900/80 border border-red-800/80 rounded-full px-6 py-3 backdrop-blur-md">
+            <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse" />
+            <span className="text-red-500 text-sm font-bold tracking-wide font-mono">
+              FLAGSHIP PLATFORM
+            </span>
+          </div>
 
-              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-                EVO: The All-In-One Revolution
-              </h1>
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                EVO represents the culmination of years of engineering innovation. One platform.
-                Multiple technologies. Unlimited possibilities. Transform your manufacturing facility
-                with the world's first truly integrated 3D printing system.
-              </p>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight">
+            EVO
+          </h1>
 
-              <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <Link
-                  to="/contact-us"
-                  className="group bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-4 rounded-lg hover:from-red-700 hover:to-red-800 transition-all font-bold text-lg flex items-center justify-center gap-2 border border-red-500"
-                >
-                  <Zap size={20} />
-                  Request a Demo
-                  <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-                </Link>
-                <a
-                  href="#specifications"
-                  className="bg-gray-900 text-white px-8 py-4 rounded-lg hover:bg-gray-800 transition-all font-bold text-lg border-2 border-gray-700 text-center"
-                >
-                  View Specifications
-                </a>
-              </div>
+          <p className="text-2xl md:text-3xl text-gray-200 mb-6 font-light max-w-4xl mx-auto leading-relaxed">
+            The All-In-One Revolution
+          </p>
 
-              <div className="grid grid-cols-3 gap-4">
-                <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-lg p-4 text-center hover:border-red-900 transition-all">
-                  <div className="text-3xl font-bold text-red-600">Multiple</div>
-                  <div className="text-gray-400 text-sm font-mono mt-1">TECH</div>
-                </div>
-                <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-lg p-4 text-center hover:border-red-900 transition-all">
-                  <div className="text-3xl font-bold text-red-600">High</div>
-                  <div className="text-gray-400 text-sm font-mono mt-1">EFFICIENCY</div>
-                </div>
-                <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-lg p-4 text-center hover:border-red-900 transition-all">
-                  <div className="text-3xl font-bold text-red-600">Wide</div>
-                  <div className="text-gray-400 text-sm font-mono mt-1">RANGE</div>
-                </div>
-              </div>
+          <p className="text-xl text-gray-300 mb-12 leading-relaxed max-w-3xl mx-auto">
+            One platform. Multiple technologies. Unlimited possibilities. Transform your manufacturing
+            facility with the world's first truly integrated 3D printing system.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+            <Link
+              to="/contact-us"
+              className="group bg-gradient-to-r from-red-600 to-red-700 text-white px-10 py-5 rounded-lg hover:from-red-700 hover:to-red-800 transition-all font-bold text-lg flex items-center justify-center gap-2 border border-red-500 shadow-xl shadow-red-900/50"
+            >
+              <Zap size={22} />
+              Request a Demo
+              <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
+            </Link>
+            <a
+              href="#specifications"
+              className="bg-white/10 text-white px-10 py-5 rounded-lg hover:bg-white/20 transition-all font-bold text-lg border-2 border-white/30 backdrop-blur-md text-center"
+            >
+              View Specifications
+            </a>
+          </div>
+
+          <div className="grid grid-cols-3 gap-4 max-w-3xl mx-auto">
+            <div className="bg-black/40 backdrop-blur-md border-2 border-white/20 rounded-lg p-6 text-center hover:border-red-500/50 transition-all">
+              <div className="text-4xl font-bold text-red-500">Multiple</div>
+              <div className="text-gray-300 text-sm font-mono mt-2">TECHNOLOGIES</div>
             </div>
-
-            <div className="relative">
-              <div className="aspect-square bg-gray-900 rounded-2xl shadow-2xl overflow-hidden flex items-center justify-center p-8 border-2 border-gray-800 relative">
-                <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:30px_30px]" />
-                <div className="absolute top-4 left-4 bg-gray-900/90 border border-gray-800 rounded px-3 py-1">
-                  <span className="text-xs text-gray-400 font-mono">EVO-001</span>
-                </div>
-                <img
-                  src="https://cdn.prod.website-files.com/6667650acd969c112f9a8ac5/66df4f0c113a487fc309af04_evo_image.webp"
-                  alt="EVO Platform 3D Printer"
-                  className="w-full h-full object-contain relative z-10"
-                />
-                <div className="absolute bottom-4 right-4 bg-gray-900/90 border border-gray-800 rounded px-3 py-1 flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                  <span className="text-xs text-gray-400 font-mono">OPERATIONAL</span>
-                </div>
-              </div>
+            <div className="bg-black/40 backdrop-blur-md border-2 border-white/20 rounded-lg p-6 text-center hover:border-red-500/50 transition-all">
+              <div className="text-4xl font-bold text-red-500">High</div>
+              <div className="text-gray-300 text-sm font-mono mt-2">EFFICIENCY</div>
             </div>
+            <div className="bg-black/40 backdrop-blur-md border-2 border-white/20 rounded-lg p-6 text-center hover:border-red-500/50 transition-all">
+              <div className="text-4xl font-bold text-red-500">Wide</div>
+              <div className="text-gray-300 text-sm font-mono mt-2">RANGE</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+          <div className="flex flex-col items-center gap-2 text-white/60 animate-bounce">
+            <span className="text-xs font-mono">SCROLL TO EXPLORE</span>
+            <ArrowRight size={20} className="rotate-90" />
           </div>
         </div>
       </section>
