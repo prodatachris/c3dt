@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, ArrowRight, Zap, Cpu, Box, Settings, Globe, Shield, Activity, Gauge, HardDrive, Thermometer } from 'lucide-react';
+import { Check, ArrowRight, Zap, Cpu, Box, Settings, Globe, Shield, Activity, Gauge, HardDrive, Thermometer, Wrench, FileText, Download, DollarSign, Clock, Layers, TrendingUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import PrintGallery from '../components/PrintGallery';
 
@@ -196,6 +196,104 @@ export default function EVO() {
         </div>
       </section>
 
+      <section className="py-24 bg-black relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-red-500 font-mono text-sm tracking-wider border border-red-900 px-4 py-2 rounded-full bg-red-950/30">
+              TOOLHEAD TECHNOLOGY
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mt-6 mb-6">
+              One Platform. Unlimited Tools.
+            </h2>
+            <p className="text-xl text-gray-400">
+              EVO's revolutionary quick-swap toolhead system lets you switch capabilities in seconds — not hours.
+              Go from high-speed production to ultra-fine detail to metal printing, all on the same machine.
+              No recalibration. No downtime. Just swap and print.
+            </p>
+            <div className="h-1 w-24 bg-gradient-to-r from-red-600 to-transparent mx-auto mt-6" />
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 mb-16">
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                <div className="w-3 h-3 bg-red-600 rounded-full animate-pulse" />
+                Available Now
+              </h3>
+              <div className="space-y-4">
+                {[
+                  { name: 'High-Speed FFF', desc: 'Thick layers, fast prints. Up to 450°C for engineering-grade materials. Ideal for prototyping and production batches.', available: true },
+                  { name: 'Detail FFF', desc: 'SLA-competitive resolution at 60-micron minimum layer width. Perfect for fine features, threads, and precision parts.', available: true },
+                  { name: 'Standard FFF', desc: 'Balanced performance for everyday printing. Reliable, versatile, production-ready.', available: true },
+                  { name: 'Bound Material', desc: 'Print metal and ceramic parts using bound filament. Sinter for fully dense functional parts.', available: true },
+                ].map((tool, idx) => (
+                  <div key={idx} className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-6 hover:border-red-900 transition-all group">
+                    <div className="flex items-start gap-4">
+                      <div className="w-3 h-3 bg-red-600 rounded-full mt-2 flex-shrink-0" />
+                      <div>
+                        <h4 className="text-lg font-bold text-white mb-2 group-hover:text-red-500 transition-colors">{tool.name}</h4>
+                        <p className="text-sm text-gray-400 leading-relaxed">{tool.desc}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                <div className="w-3 h-3 bg-gray-600 rounded-full" />
+                Coming Soon (2025+)
+              </h3>
+              <div className="space-y-4">
+                {[
+                  { name: 'Pellet Extrusion', desc: 'Direct pellet printing for lower material costs and faster throughput. Coming 2025.', available: false },
+                  { name: 'Paste Extrusion', desc: 'Ceramics, concrete, food-grade materials, and more. Expanding material possibilities.', available: false },
+                  { name: 'Pick & Place', desc: 'Automated component placement for electronics and multi-part assemblies.', available: false },
+                  { name: 'Milling', desc: 'Subtractive finishing for tight tolerances and smooth surfaces. True hybrid manufacturing.', available: false },
+                  { name: 'Continuous Fiber', desc: 'Reinforced composites for aerospace-grade strength.', available: false },
+                ].map((tool, idx) => (
+                  <div key={idx} className="bg-gradient-to-br from-gray-900/50 to-black/50 border-2 border-gray-800/50 rounded-xl p-6 hover:border-gray-700 transition-all group opacity-75">
+                    <div className="flex items-start gap-4">
+                      <div className="w-3 h-3 bg-gray-600 rounded-full mt-2 flex-shrink-0" />
+                      <div>
+                        <h4 className="text-lg font-bold text-gray-400 mb-2">{tool.name}</h4>
+                        <p className="text-sm text-gray-500 leading-relaxed">{tool.desc}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-red-950/50 to-gray-900/50 border-2 border-red-800/50 rounded-2xl p-8 mb-8">
+            <div className="flex items-start gap-6">
+              <div className="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                <Wrench className="text-white" size={32} />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-3">Smart Self-Identifying System</h3>
+                <p className="text-gray-300 text-lg leading-relaxed">
+                  Every toolhead is automatically recognized by EVO. No manual configuration. Just mount, and the system
+                  knows exactly what's installed and adjusts settings automatically.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <Link
+              to="/contact-us"
+              className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg hover:bg-red-700 transition-all font-bold border border-red-500"
+            >
+              See All Toolheads <ArrowRight size={20} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section id="specifications" className="py-24 bg-black relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
 
@@ -239,6 +337,104 @@ export default function EVO() {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-gray-950 relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-red-500 font-mono text-sm tracking-wider border border-red-900 px-4 py-2 rounded-full bg-red-950/30">
+              SPECIFICATIONS
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mt-6 mb-6">
+              Built for Industrial Performance
+            </h2>
+            <p className="text-xl text-gray-400">
+              EVO exceeds the specifications of machines costing 10x more. Every component is engineered
+              for precision, durability, and reliability in demanding production environments.
+            </p>
+            <div className="h-1 w-24 bg-gradient-to-r from-red-600 to-transparent mx-auto mt-6" />
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            {[
+              { icon: Layers, value: '490 × 875 × 780 mm', label: 'Build Volume' },
+              { icon: Gauge, value: '< 5 Micron', label: 'Layer Resolution' },
+              { icon: Thermometer, value: '450°C', label: 'Max Hotend Temp' },
+              { icon: Zap, value: '150°C', label: 'Heated Bed' },
+              { icon: Thermometer, value: '90°C', label: 'Heated Enclosure' },
+              { icon: Box, value: '100 kg', label: 'Machine Weight' },
+            ].map((spec, idx) => (
+              <div key={idx} className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8 hover:border-red-900 transition-all text-center group">
+                <spec.icon className="text-red-600 mx-auto mb-4 group-hover:scale-110 transition-transform" size={48} />
+                <div className="text-4xl font-bold text-white mb-2 font-mono">{spec.value}</div>
+                <div className="text-gray-400 font-medium">{spec.label}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8">
+            <h3 className="text-2xl font-bold text-white mb-8 text-center">Full Technical Specifications</h3>
+
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b-2 border-gray-800">
+                    <th className="text-left py-4 px-4 text-gray-400 font-bold text-sm uppercase tracking-wide">Category</th>
+                    <th className="text-left py-4 px-4 text-gray-400 font-bold text-sm uppercase tracking-wide">Specification</th>
+                    <th className="text-left py-4 px-4 text-gray-400 font-bold text-sm uppercase tracking-wide">Value</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { category: 'Power', spec: 'Peak Power Consumption', value: '15A @ 110V / 7.5A @ 220V' },
+                    { category: 'Dimensions', spec: 'External Size', value: '1194 × 788 × 1107 mm' },
+                    { category: 'Dimensions', spec: 'Machine Weight', value: '100 kg' },
+                    { category: 'Build Volume', spec: 'Without Bellows', value: '490 (Single) / 455 (Ditto) × 875 × 780 mm' },
+                    { category: 'Build Volume', spec: 'With Bellows', value: '470 (Single) / 440 (Ditto) × 775 × 780 mm' },
+                    { category: 'Resolution', spec: 'Minimum Layer Width', value: '60 Micron' },
+                    { category: 'Resolution', spec: 'Layer Height Resolution', value: '< 5 Micron' },
+                    { category: 'Temperature', spec: 'Max Heated Enclosure', value: '90°C' },
+                    { category: 'Temperature', spec: 'Max Heated Bed', value: '150°C' },
+                    { category: 'Temperature', spec: 'Max Detail Tool', value: '300°C' },
+                    { category: 'Temperature', spec: 'Max Standard/HS Tools', value: '450°C' },
+                    { category: 'Motion', spec: 'Kinematic System', value: 'C3DT IDEX Core XYU' },
+                    { category: 'Motion', spec: 'Z-Axis', value: '4 independent motors, precision ball screws' },
+                    { category: 'Toolhead', spec: 'System', value: 'Smart Self-Identifying with Quick Swap Mounting' },
+                    { category: 'Extruder', spec: 'Type', value: 'Dual Pinch Mix-Drive System' },
+                    { category: 'Connectivity', spec: 'Interface', value: 'x86 with Ethernet & WiFi' },
+                    { category: 'Print Methods', spec: 'Currently Supported', value: 'FFF, Bound Material FFF, Continuous Reinforced FFF' },
+                    { category: 'Print Methods', spec: 'Coming 2025', value: 'Pellet Extrusion, Paste Extrusion' },
+                  ].map((row, idx) => (
+                    <tr key={idx} className="border-b border-gray-800 hover:bg-gray-900/50 transition-colors">
+                      <td className="py-4 px-4 text-gray-500 font-medium text-sm">{row.category}</td>
+                      <td className="py-4 px-4 text-white font-medium">{row.spec}</td>
+                      <td className="py-4 px-4 text-gray-300 font-mono text-sm">{row.value}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 pt-8 border-t-2 border-gray-800">
+              <Link
+                to="/contact-us"
+                className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-all font-bold"
+              >
+                <Download size={20} />
+                Download Full Spec Sheet (PDF)
+              </Link>
+              <Link
+                to="/contact-us"
+                className="inline-flex items-center justify-center gap-2 bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-all font-bold border border-gray-700"
+              >
+                <FileText size={20} />
+                Request Custom Configuration
+              </Link>
             </div>
           </div>
         </div>
@@ -302,6 +498,102 @@ export default function EVO() {
       </section>
 
       <section className="py-24 bg-black relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-red-500 font-mono text-sm tracking-wider border border-red-900 px-4 py-2 rounded-full bg-red-950/30">
+              WHY EVO
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mt-6 mb-6">
+              Replace Your Entire Print Shop
+            </h2>
+            <p className="text-xl text-gray-400">
+              Traditional manufacturing requires multiple specialized machines. EVO consolidates them all
+              into one platform — saving space, cost, and complexity.
+            </p>
+            <div className="h-1 w-24 bg-gradient-to-r from-red-600 to-transparent mx-auto mt-6" />
+          </div>
+
+          <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl overflow-hidden mb-12">
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="bg-gray-900/50 border-b-2 border-gray-800">
+                    <th className="text-left py-5 px-6 text-white font-bold text-lg">Capability</th>
+                    <th className="text-left py-5 px-6 text-white font-bold text-lg">Traditional Approach</th>
+                    <th className="text-left py-5 px-6 text-white font-bold text-lg">With EVO</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { capability: 'High-Speed Prototyping', traditional: 'Dedicated FDM printer', evo: true },
+                    { capability: 'Fine Detail Printing', traditional: 'SLA/DLP printer', evo: true },
+                    { capability: 'High-Temp Engineering', traditional: 'Specialty printer', evo: true },
+                    { capability: 'Metal Parts', traditional: 'Metal printer', evo: 'Bound Material' },
+                    { capability: 'Large Format', traditional: 'Large-format printer', evo: true },
+                    { capability: 'Multi-Material', traditional: 'Multiple machines or manual swaps', evo: 'Automatic IDEX' },
+                    { capability: 'Total Investment', traditional: 'Multiple units', evo: 'One EVO' },
+                    { capability: 'Floor Space', traditional: '500+ sq ft', evo: '< 20 sq ft' },
+                    { capability: 'Training Required', traditional: 'Multiple systems', evo: 'One platform' },
+                  ].map((row, idx) => (
+                    <tr key={idx} className="border-b border-gray-800 hover:bg-gray-900/30 transition-colors">
+                      <td className="py-5 px-6 text-white font-semibold">{row.capability}</td>
+                      <td className="py-5 px-6 text-gray-400">{row.traditional}</td>
+                      <td className="py-5 px-6">
+                        {typeof row.evo === 'boolean' ? (
+                          <div className="flex items-center gap-2">
+                            <Check className="text-green-500" size={20} />
+                            <span className="text-green-500 font-semibold">Included</span>
+                          </div>
+                        ) : (
+                          <div className="flex items-center gap-2">
+                            <Check className="text-green-500" size={20} />
+                            <span className="text-green-500 font-semibold">{row.evo}</span>
+                          </div>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-red-950/50 to-gray-900/50 border-2 border-red-800/50 rounded-2xl p-12 mb-8">
+            <div className="flex items-start gap-6">
+              <div className="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                <TrendingUp className="text-white" size={32} />
+              </div>
+              <div>
+                <h3 className="text-3xl font-bold text-white mb-3">The Bottom Line</h3>
+                <p className="text-gray-300 text-xl leading-relaxed">
+                  One operator. One machine. One workflow. Unlimited capabilities.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/contact-us"
+              className="inline-flex items-center justify-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg hover:bg-red-700 transition-all font-bold text-lg border border-red-500"
+            >
+              <DollarSign size={20} />
+              Calculate Your ROI
+            </Link>
+            <Link
+              to="/contact-us"
+              className="inline-flex items-center justify-center gap-2 bg-gray-800 text-white px-8 py-4 rounded-lg hover:bg-gray-700 transition-all font-bold text-lg border border-gray-700"
+            >
+              Request Pricing
+              <ArrowRight size={20} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-gray-950 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
 
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
