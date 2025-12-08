@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Users, BookOpen, Lightbulb, ArrowRight, Check } from 'lucide-react';
+import { GraduationCap, Users, BookOpen, Lightbulb, ArrowRight, Check, AlertCircle, Clock, DollarSign, Target, Shield, Award, Cpu, TrendingUp, Layers, Workflow, Package, Star, Zap, FileText, Video, Microscope, Calculator } from 'lucide-react';
 
 export default function Education() {
   const benefits = [
@@ -99,6 +99,186 @@ export default function Education() {
                 <div className="text-gray-400">Training Program</div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-gray-950 relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-red-500 font-mono text-sm tracking-wider border border-red-900 px-4 py-2 rounded-full bg-red-950/30">
+              EDUCATIONAL CHALLENGES
+            </span>
+            <h2 className="text-4xl font-bold text-white mt-6 mb-6">
+              Educational Challenges Solved by EVO's 3D Printing Platform
+            </h2>
+            <p className="text-xl text-gray-400">
+              Traditional educational 3D printing solutions create operational bottlenecks and limit learning outcomes. EVO's
+              single-cell manufacturing platform addresses these challenges head-on.
+            </p>
+            <div className="h-1 w-24 bg-gradient-to-r from-red-600 to-transparent mx-auto mt-6" />
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8 hover:border-red-900 transition-all relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-red-600/5 rounded-full blur-2xl group-hover:bg-red-600/10 transition-all" />
+              <div className="relative">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 bg-red-950 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <DollarSign className="text-red-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">Limited Equipment Budgets</h3>
+                    <p className="text-sm text-gray-500 font-mono">CHALLENGE</p>
+                  </div>
+                </div>
+                <p className="text-gray-400 mb-4 leading-relaxed">
+                  Educational institutions need multiple 3D printing technologies for comprehensive additive manufacturing education,
+                  but face severe budget constraints. Purchasing separate FDM, resin, and specialty printers requires massive capital
+                  investment. Each technology demands its own training, maintenance, and material inventory. Many programs compromise
+                  by teaching only one technology, leaving students unprepared for industry demands.
+                </p>
+                <div className="border-t border-gray-800 pt-4 mt-4">
+                  <div className="flex items-start gap-3">
+                    <Check className="text-green-500 flex-shrink-0 mt-1" size={18} />
+                    <div>
+                      <p className="text-white font-semibold mb-1">EVO Solution</p>
+                      <p className="text-gray-400 text-sm leading-relaxed">
+                        One EVO platform replaces an entire lab of specialized 3D printers. Teach all major additive manufacturing
+                        technologies from a single investment. Educational pricing makes comprehensive 3D printing education accessible.
+                        Students gain hands-on experience with FDM, advanced materials, and rapid prototyping workflows using the same
+                        industrial platform they'll encounter in careers. Consolidate maintenance, training, and material costs.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8 hover:border-red-900 transition-all relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-red-600/5 rounded-full blur-2xl group-hover:bg-red-600/10 transition-all" />
+              <div className="relative">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 bg-red-950 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Users className="text-red-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">Low Student Throughput</h3>
+                    <p className="text-sm text-gray-500 font-mono">CHALLENGE</p>
+                  </div>
+                </div>
+                <p className="text-gray-400 mb-4 leading-relaxed">
+                  Traditional 3D printers serve one student at a time. With class sizes of 20-30 students and single-purpose equipment,
+                  wait times become excessive. Students get minimal hands-on time. Print queues extend for days. Labs stay busy 24/7
+                  but still can't meet demand. Learning suffers when students must wait weeks to see their designs printed. Project
+                  timelines extend beyond semester boundaries.
+                </p>
+                <div className="border-t border-gray-800 pt-4 mt-4">
+                  <div className="flex items-start gap-3">
+                    <Check className="text-green-500 flex-shrink-0 mt-1" size={18} />
+                    <div>
+                      <p className="text-white font-semibold mb-1">EVO Solution</p>
+                      <p className="text-gray-400 text-sm leading-relaxed">
+                        EVO's large build volume and efficient workflow maximize student throughput. Print multiple student projects
+                        simultaneously. Rapid prototyping speeds mean overnight turnaround for most assignments. 24/7 autonomous operation
+                        keeps the platform productive between class sessions. Remote job submission lets students queue prints outside lab
+                        hours. One EVO serves an entire program, not just individual students. Maximize hands-on learning time.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8 hover:border-red-900 transition-all relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-red-600/5 rounded-full blur-2xl group-hover:bg-red-600/10 transition-all" />
+              <div className="relative">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 bg-red-950 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Shield className="text-red-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">Safety and Supervision Requirements</h3>
+                    <p className="text-sm text-gray-500 font-mono">CHALLENGE</p>
+                  </div>
+                </div>
+                <p className="text-gray-400 mb-4 leading-relaxed">
+                  Resin 3D printers require chemical handling protocols unsuitable for many educational settings. Powder-based systems
+                  create airborne particulate hazards. Both demand intensive faculty supervision. Safety equipment, ventilation, and
+                  containment add facility costs. Liability concerns limit student access. Schools must choose between comprehensive
+                  technology coverage and student safety, often sacrificing advanced manufacturing education.
+                </p>
+                <div className="border-t border-gray-800 pt-4 mt-4">
+                  <div className="flex items-start gap-3">
+                    <Check className="text-green-500 flex-shrink-0 mt-1" size={18} />
+                    <div>
+                      <p className="text-white font-semibold mb-1">EVO Solution</p>
+                      <p className="text-gray-400 text-sm leading-relaxed">
+                        FFF 3D printing uses solid filament materials - no hazardous chemicals, resins, or powders. Safe for classroom
+                        use without special ventilation or PPE. Students can operate independently after basic training. Minimal
+                        supervision required during operation. No chemical disposal or powder containment systems needed. Meets safety
+                        standards for K-12 through university settings. Enable comprehensive additive manufacturing education without
+                        compromising student safety or requiring hazmat protocols.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8 hover:border-red-900 transition-all relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-red-600/5 rounded-full blur-2xl group-hover:bg-red-600/10 transition-all" />
+              <div className="relative">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 bg-red-950 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Target className="text-red-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">Industry Skills Gap</h3>
+                    <p className="text-sm text-gray-500 font-mono">CHALLENGE</p>
+                  </div>
+                </div>
+                <p className="text-gray-400 mb-4 leading-relaxed">
+                  Students graduate with 3D printing experience on consumer-grade equipment that bears little resemblance to industrial
+                  systems. Entry-level hobby printers teach bad habits and don't expose students to professional workflows. Employers
+                  must retrain graduates on production equipment. Educational institutions struggle to afford industrial 3D printing
+                  platforms. The technology gap between classroom and career creates friction in workforce development.
+                </p>
+                <div className="border-t border-gray-800 pt-4 mt-4">
+                  <div className="flex items-start gap-3">
+                    <Check className="text-green-500 flex-shrink-0 mt-1" size={18} />
+                    <div>
+                      <p className="text-white font-semibold mb-1">EVO Solution</p>
+                      <p className="text-gray-400 text-sm leading-relaxed">
+                        Students train on the same industrial single-cell manufacturing platform used in production environments.
+                        Learn professional workflows, quality control, and production-grade rapid prototyping. Graduate with experience
+                        on equipment they'll encounter in manufacturing careers. Employers value EVO training as industry-relevant
+                        preparation. Educational pricing makes industrial 3D printing accessible to institutions. Bridge the technology
+                        gap between education and industry. Students enter workforce with immediately applicable additive manufacturing skills.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-red-950/30 to-gray-900/30 border-2 border-red-900/30 rounded-xl p-8 text-center">
+            <h3 className="text-2xl font-bold text-white mb-4">
+              Ready to Transform Your 3D Printing Education Program?
+            </h3>
+            <p className="text-gray-300 mb-6 text-lg max-w-3xl mx-auto">
+              Discover how EVO's educational solutions eliminate traditional barriers to comprehensive additive manufacturing education.
+            </p>
+            <a
+              href="/contact-us"
+              className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg hover:bg-red-700 transition-all font-bold"
+            >
+              Schedule Educational Consultation
+              <ArrowRight size={20} />
+            </a>
           </div>
         </div>
       </section>

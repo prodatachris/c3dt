@@ -1,5 +1,5 @@
 import React from 'react';
-import { Plane, Rocket, Shield, Gauge, ArrowRight, Check, Zap, Layers, Award, Target, Wind, CircuitBoard } from 'lucide-react';
+import { Plane, Rocket, Shield, Gauge, ArrowRight, Check, Zap, Layers, Award, Target, Wind, CircuitBoard, AlertCircle, Clock, DollarSign, FileText, TrendingUp, Package, Cpu, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Aerospace() {
@@ -181,6 +181,188 @@ export default function Aerospace() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-black relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-red-500 font-mono text-sm tracking-wider border border-red-900 px-4 py-2 rounded-full bg-red-950/30">
+              AEROSPACE CHALLENGES
+            </span>
+            <h2 className="text-4xl font-bold text-white mt-6 mb-6">
+              Aerospace Manufacturing Challenges Solved by 3D Printing
+            </h2>
+            <p className="text-xl text-gray-400">
+              Traditional aerospace manufacturing creates critical bottlenecks that impact development timelines and operational readiness.
+              EVO's additive manufacturing platform addresses these aerospace-specific challenges with rapid prototyping and on-demand production.
+            </p>
+            <div className="h-1 w-24 bg-gradient-to-r from-red-600 to-transparent mx-auto mt-6" />
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8 hover:border-red-900 transition-all relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-red-600/5 rounded-full blur-2xl group-hover:bg-red-600/10 transition-all" />
+              <div className="relative">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 bg-red-950 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Clock className="text-red-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">Extended Lead Times</h3>
+                    <p className="text-sm text-gray-500 font-mono">CHALLENGE</p>
+                  </div>
+                </div>
+                <p className="text-gray-400 mb-4 leading-relaxed">
+                  Traditional aerospace manufacturing involves complex supply chains with 6-12 month lead times for tooling and parts.
+                  Design changes trigger cascading delays across programs. Prototype iterations take months. Mission-critical parts face
+                  lengthy procurement processes. Aircraft remain grounded awaiting components. Development programs miss launch windows.
+                  Competitive advantage erodes while waiting for traditional manufacturing.
+                </p>
+                <div className="border-t border-gray-800 pt-4 mt-4">
+                  <div className="flex items-start gap-3">
+                    <Check className="text-green-500 flex-shrink-0 mt-1" size={18} />
+                    <div>
+                      <p className="text-white font-semibold mb-1">EVO Solution</p>
+                      <p className="text-gray-400 text-sm leading-relaxed">
+                        3D printing eliminates tooling entirely, compressing 6-month lead times into days. Rapid prototyping enables
+                        overnight design iteration. On-demand manufacturing produces replacement parts without minimum orders or tooling
+                        costs. Design changes happen in CAD files, not factory floors. Critical components print on-site, eliminating
+                        supply chain dependencies. Accelerate development cycles by 10x. Restore aircraft to service faster with additive
+                        manufacturing capabilities.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8 hover:border-red-900 transition-all relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-red-600/5 rounded-full blur-2xl group-hover:bg-red-600/10 transition-all" />
+              <div className="relative">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 bg-red-950 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Package className="text-red-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">Obsolescence and Legacy Parts</h3>
+                    <p className="text-sm text-gray-500 font-mono">CHALLENGE</p>
+                  </div>
+                </div>
+                <p className="text-gray-400 mb-4 leading-relaxed">
+                  Aircraft operate for 30+ years but suppliers discontinue parts after 10-15 years. Original tooling gets scrapped.
+                  OEM manufacturers exit the business. Finding replacements for obsolete components becomes impossible. Aircraft face
+                  early retirement due to unavailable parts. Reverse engineering costs more than original manufacturing. Maintaining
+                  spare parts inventory ties up capital and warehouse space.
+                </p>
+                <div className="border-t border-gray-800 pt-4 mt-4">
+                  <div className="flex items-start gap-3">
+                    <Check className="text-green-500 flex-shrink-0 mt-1" size={18} />
+                    <div>
+                      <p className="text-white font-semibold mb-1">EVO Solution</p>
+                      <p className="text-gray-400 text-sm leading-relaxed">
+                        Store parts as digital CAD files instead of physical inventory. Print legacy components on-demand without
+                        original tooling. Reproduce obsolete parts through reverse engineering and additive manufacturing. Extend
+                        aircraft service life by decades. Eliminate dependency on OEM spare parts programs. Transform warehouse
+                        inventory into digital libraries. Single-cell manufacturing enables batch-of-one production economically.
+                        Maintain mission readiness regardless of parts availability.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8 hover:border-red-900 transition-all relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-red-600/5 rounded-full blur-2xl group-hover:bg-red-600/10 transition-all" />
+              <div className="relative">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 bg-red-950 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <DollarSign className="text-red-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">High Development Costs</h3>
+                    <p className="text-sm text-gray-500 font-mono">CHALLENGE</p>
+                  </div>
+                </div>
+                <p className="text-gray-400 mb-4 leading-relaxed">
+                  Aerospace development requires extensive prototyping and testing. Traditional manufacturing demands expensive tooling
+                  for each design iteration. Minimum order quantities force purchasing 100+ units to test one design. Prototype costs
+                  reach hundreds of thousands of dollars. Budget constraints limit iteration cycles. Engineering teams must commit to
+                  designs before adequate physical testing. Mistakes discovered late cost millions to rectify.
+                </p>
+                <div className="border-t border-gray-800 pt-4 mt-4">
+                  <div className="flex items-start gap-3">
+                    <Check className="text-green-500 flex-shrink-0 mt-1" size={18} />
+                    <div>
+                      <p className="text-white font-semibold mb-1">EVO Solution</p>
+                      <p className="text-gray-400 text-sm leading-relaxed">
+                        3D printing produces aerospace prototypes at a fraction of traditional costs. No tooling investment required.
+                        Print single units for testing without minimum orders. Rapid prototyping enables unlimited design iterations
+                        within project budgets. Test multiple design variations in parallel. Discover design flaws early when changes
+                        cost pennies, not millions. Validate concepts physically before committing to production tooling. Additive
+                        manufacturing democratizes aerospace innovation by lowering iteration costs by 95%.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8 hover:border-red-900 transition-all relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-red-600/5 rounded-full blur-2xl group-hover:bg-red-600/10 transition-all" />
+              <div className="relative">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 bg-red-950 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Gauge className="text-red-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">Weight Reduction Requirements</h3>
+                    <p className="text-sm text-gray-500 font-mono">CHALLENGE</p>
+                  </div>
+                </div>
+                <p className="text-gray-400 mb-4 leading-relaxed">
+                  Every kilogram of aircraft weight costs thousands in lifetime fuel consumption. Traditional manufacturing limits
+                  topology optimization. Solid components use more material than necessary. Complex internal structures require assembly
+                  of multiple parts. Weight reduction demands exotic materials and expensive machining. Engineers compromise between
+                  strength and weight. Fuel efficiency suffers from heavy legacy designs constrained by manufacturing limitations.
+                </p>
+                <div className="border-t border-gray-800 pt-4 mt-4">
+                  <div className="flex items-start gap-3">
+                    <Check className="text-green-500 flex-shrink-0 mt-1" size={18} />
+                    <div>
+                      <p className="text-white font-semibold mb-1">EVO Solution</p>
+                      <p className="text-gray-400 text-sm leading-relaxed">
+                        Additive manufacturing enables topology optimization impossible with traditional methods. Create organic lattice
+                        structures that maximize strength-to-weight ratios. Design hollow internal geometries without assembly. Build
+                        complex parts as single units. Reduce component weight by 40-60% while maintaining structural performance. Print
+                        with high-strength aerospace polymers and carbon fiber composites. Achieve optimal weight distribution through
+                        generative design. Transform fuel efficiency with lightweight 3D printed aerospace components.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-red-950/30 to-gray-900/30 border-2 border-red-900/30 rounded-xl p-8 text-center">
+            <h3 className="text-2xl font-bold text-white mb-4">
+              Ready to Accelerate Your Aerospace Development?
+            </h3>
+            <p className="text-gray-300 mb-6 text-lg max-w-3xl mx-auto">
+              Discover how EVO's 3D printing platform solves aerospace-specific manufacturing challenges with rapid prototyping and on-demand production.
+            </p>
+            <Link
+              to="/contact-us"
+              className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg hover:bg-red-700 transition-all font-bold"
+            >
+              Schedule Aerospace Consultation
+              <ArrowRight size={20} />
+            </Link>
           </div>
         </div>
       </section>
