@@ -1,5 +1,5 @@
 import React from 'react';
-import { Factory, Cog, Package, TrendingUp, ArrowRight, Check, Gauge, Cpu, Zap, Activity } from 'lucide-react';
+import { Factory, Cog, Package, TrendingUp, ArrowRight, Check, Gauge, Cpu, Zap, Activity, AlertCircle, Clock, Target, Boxes, Shield, Users, Award, Workflow, DollarSign, Layers } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Industrial() {
@@ -67,12 +67,12 @@ export default function Industrial() {
 
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
                 <span className="block text-gray-500 text-xl font-mono mb-2">[ SECTOR: MANUFACTURING ]</span>
-                Transform Your Factory Floor
+                Transform Your Factory Floor with Additive Manufacturing
               </h1>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                EVO simplifies the management of multiple 3D printing technologies. One platform
-                delivers the full spectrum of additive manufacturing capabilities your production
-                line demands.
+                EVO brings single-cell manufacturing to your production facility. One 3D printing platform delivers the full
+                spectrum of additive manufacturing capabilities your operation demands. From rapid prototyping to end-use parts,
+                replace multiple machines with one integrated system. Reduce complexity, maximize uptime, and accelerate time-to-market.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -131,6 +131,175 @@ export default function Industrial() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 bg-gray-950 relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-red-500 font-mono text-sm tracking-wider border border-red-900 px-4 py-2 rounded-full bg-red-950/30">
+              MANUFACTURING CHALLENGES
+            </span>
+            <h2 className="text-4xl font-bold text-white mt-6 mb-6">
+              Industrial Manufacturing Challenges Solved by 3D Printing
+            </h2>
+            <p className="text-xl text-gray-400">
+              Traditional manufacturing creates operational inefficiencies that limit agility. EVO's additive manufacturing
+              platform addresses these challenges with single-cell manufacturing and rapid prototyping capabilities.
+            </p>
+            <div className="h-1 w-24 bg-gradient-to-r from-red-600 to-transparent mx-auto mt-6" />
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8 hover:border-red-900 transition-all relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-red-600/5 rounded-full blur-2xl group-hover:bg-red-600/10 transition-all" />
+              <div className="relative">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 bg-red-950 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <DollarSign className="text-red-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">High Equipment Costs</h3>
+                    <p className="text-sm text-gray-500 font-mono">CHALLENGE</p>
+                  </div>
+                </div>
+                <p className="text-gray-400 mb-4 leading-relaxed">
+                  Industrial facilities require multiple specialized 3D printers for different materials and technologies. Each
+                  machine represents significant capital expense, maintenance burden, and floor space requirements. Technology
+                  diversity means training operators on multiple systems.
+                </p>
+                <div className="border-t border-gray-800 pt-4 mt-4">
+                  <div className="flex items-start gap-3">
+                    <Check className="text-green-500 flex-shrink-0 mt-1" size={18} />
+                    <div>
+                      <p className="text-white font-semibold mb-1">EVO Solution</p>
+                      <p className="text-gray-400 text-sm leading-relaxed">
+                        Replace multiple machines with one single-cell manufacturing platform. EVO consolidates FDM, metal, and
+                        specialty printing capabilities in a compact footprint. Reduce capital expenditure, simplify training, and
+                        minimize maintenance overhead. One system, multiple technologies, unified workflow.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8 hover:border-red-900 transition-all relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-red-600/5 rounded-full blur-2xl group-hover:bg-red-600/10 transition-all" />
+              <div className="relative">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 bg-red-950 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Clock className="text-red-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">Long Lead Times</h3>
+                    <p className="text-sm text-gray-500 font-mono">CHALLENGE</p>
+                  </div>
+                </div>
+                <p className="text-gray-400 mb-4 leading-relaxed">
+                  Traditional manufacturing requires tooling, fixtures, and setup time. Changes mean retooling delays. Rapid
+                  prototyping takes weeks when outsourced. Supply chain dependencies create unpredictable timelines. Production
+                  flexibility suffers.
+                </p>
+                <div className="border-t border-gray-800 pt-4 mt-4">
+                  <div className="flex items-start gap-3">
+                    <Check className="text-green-500 flex-shrink-0 mt-1" size={18} />
+                    <div>
+                      <p className="text-white font-semibold mb-1">EVO Solution</p>
+                      <p className="text-gray-400 text-sm leading-relaxed">
+                        3D printing eliminates tooling entirely. Go from CAD to physical part in hours. Design changes happen
+                        overnight with no setup penalty. Rapid prototyping on-site means instant validation. Tool-free changeover
+                        between jobs takes minutes. Achieve supply chain independence for critical components.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8 hover:border-red-900 transition-all relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-red-600/5 rounded-full blur-2xl group-hover:bg-red-600/10 transition-all" />
+              <div className="relative">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 bg-red-950 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Boxes className="text-red-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">Inventory Management</h3>
+                    <p className="text-sm text-gray-500 font-mono">CHALLENGE</p>
+                  </div>
+                </div>
+                <p className="text-gray-400 mb-4 leading-relaxed">
+                  Maintaining spare parts inventory ties up capital. Obsolete parts become worthless when equipment upgrades. Low-volume
+                  parts face minimum order quantities. Storage space costs money. Inventory accuracy requires continuous tracking.
+                </p>
+                <div className="border-t border-gray-800 pt-4 mt-4">
+                  <div className="flex items-start gap-3">
+                    <Check className="text-green-500 flex-shrink-0 mt-1" size={18} />
+                    <div>
+                      <p className="text-white font-semibold mb-1">EVO Solution</p>
+                      <p className="text-gray-400 text-sm leading-relaxed">
+                        Print parts on-demand. Store digital files instead of physical inventory. Produce exact quantities needed.
+                        Never deal with minimum orders. Update legacy part designs digitally. Free warehouse space. Reduce carrying
+                        costs. Additive manufacturing transforms inventory into digital assets.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl p-8 hover:border-red-900 transition-all relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-red-600/5 rounded-full blur-2xl group-hover:bg-red-600/10 transition-all" />
+              <div className="relative">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-12 h-12 bg-red-950 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Target className="text-red-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2">Limited Customization</h3>
+                    <p className="text-sm text-gray-500 font-mono">CHALLENGE</p>
+                  </div>
+                </div>
+                <p className="text-gray-400 mb-4 leading-relaxed">
+                  Mass production optimizes for volume, not variation. Custom parts require separate tooling investments. Small-batch
+                  production is economically unfeasible. Customer-specific modifications add complexity and cost. Design changes
+                  impact entire production runs.
+                </p>
+                <div className="border-t border-gray-800 pt-4 mt-4">
+                  <div className="flex items-start gap-3">
+                    <Check className="text-green-500 flex-shrink-0 mt-1" size={18} />
+                    <div>
+                      <p className="text-white font-semibold mb-1">EVO Solution</p>
+                      <p className="text-gray-400 text-sm leading-relaxed">
+                        3D printing enables mass customization at scale. Every part can be unique at no additional cost. Produce
+                        batch-of-one economically. Offer customer-specific variations without tooling penalties. Mix different designs
+                        in the same build. Enable business models impossible with traditional manufacturing.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-red-950/30 to-gray-900/30 border-2 border-red-900/30 rounded-xl p-8 text-center">
+            <h3 className="text-2xl font-bold text-white mb-4">
+              Ready to Modernize Your Manufacturing Operations?
+            </h3>
+            <p className="text-gray-300 mb-6 text-lg max-w-3xl mx-auto">
+              Discover how EVO's single-cell manufacturing platform eliminates traditional production bottlenecks.
+            </p>
+            <Link
+              to="/contact-us"
+              className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-4 rounded-lg hover:bg-red-700 transition-all font-bold"
+            >
+              Schedule Manufacturing Assessment
+              <ArrowRight size={20} />
+            </Link>
           </div>
         </div>
       </section>

@@ -64,11 +64,13 @@ export default function Education() {
                 </span>
               </div>
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-                Prepare Students for the Future
+                Prepare Students for the Future of 3D Printing and Additive Manufacturing
               </h1>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                EVO brings industrial-grade, multi-technology manufacturing into the classroom.
-                Give your students comprehensive training on the same platform they'll use in their careers.
+                EVO brings industrial-grade, multi-technology 3D printing directly into the classroom. Give your students
+                comprehensive hands-on training in additive manufacturing, rapid prototyping, and single-cell manufacturing
+                on the same professional platform they'll use in their careers. From engineering programs to vocational schools,
+                prepare the next generation of manufacturing professionals with real-world 3D printing experience.
               </p>
               <a
                 href="/contact-us"
@@ -110,10 +112,12 @@ export default function Education() {
               FFF/FDM FOR EDUCATION
             </span>
             <h2 className="text-4xl font-bold text-white mt-6 mb-6">
-              Why Educators Choose FFF Technology
+              Why Educators Choose FFF 3D Printing Technology
             </h2>
             <p className="text-xl text-gray-400">
-              Fused Filament Fabrication provides the perfect balance of safety, affordability, and educational value for teaching environments.
+              Fused Filament Fabrication 3D printing provides the perfect balance of safety, affordability, and educational value
+              for teaching additive manufacturing and rapid prototyping in classroom environments. Students gain practical experience
+              with industry-standard single-cell manufacturing technology.
             </p>
             <div className="h-1 w-24 bg-gradient-to-r from-red-600 to-transparent mx-auto mt-6" />
           </div>

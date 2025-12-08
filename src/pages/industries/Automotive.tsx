@@ -123,12 +123,13 @@ export default function Automotive() {
 
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
                 <span className="block text-gray-500 text-xl font-mono mb-2">[ SECTOR: AUTOMOTIVE ]</span>
-                Accelerate Your Product Development
+                Accelerate Automotive Development with 3D Printing
               </h1>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                EVO empowers automotive engineers and designers to rapidly prototype, test, and iterate.
-                From concept cars to production tooling, compress your development timeline and bring
-                innovative vehicles to market faster.
+                EVO empowers automotive engineers and designers with rapid prototyping and additive manufacturing capabilities.
+                Our single-cell manufacturing platform enables fast iteration of automotive components from initial concept to
+                production tooling. Leverage 3D printing technology to compress development timelines, reduce tooling costs, and
+                bring innovative vehicles to market faster with on-demand manufacturing of functional prototypes and end-use parts.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -200,10 +201,12 @@ export default function Automotive() {
               FFF/FDM FOR AUTOMOTIVE
             </span>
             <h2 className="text-4xl font-bold text-white mt-6 mb-6">
-              Why Automotive Engineers Rely on FFF Technology
+              Why Automotive Engineers Rely on FFF 3D Printing Technology
             </h2>
             <p className="text-xl text-gray-400">
-              Fused Filament Fabrication delivers the speed, material properties, and cost-effectiveness that automotive development demands.
+              Fused Filament Fabrication 3D printing delivers the speed, material properties, and cost-effectiveness that automotive
+              development demands. Rapid prototyping with additive manufacturing enables engineers to test multiple design iterations
+              quickly, validate functional performance, and accelerate time-to-market for new vehicle programs.
             </p>
             <div className="h-1 w-24 bg-gradient-to-r from-red-600 to-transparent mx-auto mt-6" />
           </div>

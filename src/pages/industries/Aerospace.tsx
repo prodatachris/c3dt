@@ -116,12 +116,13 @@ export default function Aerospace() {
 
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
                 <span className="block text-gray-500 text-xl font-mono mb-2">[ SECTOR: AEROSPACE ]</span>
-                Precision Engineering for Flight
+                Precision Aerospace 3D Printing and Additive Manufacturing
               </h1>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                EVO delivers aerospace-grade additive manufacturing with the precision, reliability, and
-                material performance required for aviation and space applications. From UAVs to aircraft
-                interiors, produce mission-critical components with confidence.
+                EVO delivers aerospace-grade additive manufacturing with the precision, reliability, and material performance
+                required for aviation and space applications. Our single-cell manufacturing platform enables rapid prototyping
+                of flight components and production of mission-critical aerospace parts. From UAV components to aircraft interior
+                parts, leverage advanced 3D printing technology for lightweight, high-strength aerospace manufacturing.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -193,10 +194,12 @@ export default function Aerospace() {
               FFF/FDM FOR AEROSPACE
             </span>
             <h2 className="text-4xl font-bold text-white mt-6 mb-6">
-              Why Aerospace Leaders Choose FFF Technology
+              Why Aerospace Leaders Choose FFF 3D Printing Technology
             </h2>
             <p className="text-xl text-gray-400">
-              Fused Filament Fabrication provides the material properties, precision, and reliability required for demanding aerospace applications.
+              Fused Filament Fabrication 3D printing provides the material properties, precision, and reliability required for
+              demanding aerospace applications. Additive manufacturing enables rapid prototyping of aerospace components with
+              high-performance polymers and composites suitable for flight-critical applications.
             </p>
             <div className="h-1 w-24 bg-gradient-to-r from-red-600 to-transparent mx-auto mt-6" />
           </div>

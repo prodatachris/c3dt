@@ -130,12 +130,13 @@ export default function RapidPrototyping() {
 
               <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
                 <span className="block text-gray-500 text-xl font-mono mb-2">[ SOLUTION: PROTOTYPING ]</span>
-                From Idea to Prototype in Hours
+                Rapid Prototyping with Advanced 3D Printing Technology
               </h1>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                EVO revolutionizes rapid prototyping with unmatched speed and cost-effectiveness. Transform
-                digital designs into physical prototypes overnight. Test, iterate, and perfect your designs
-                at a pace that keeps up with your innovation.
+                EVO revolutionizes rapid prototyping with unmatched speed and cost-effectiveness through additive manufacturing.
+                Transform digital designs into physical prototypes overnight using our single-cell manufacturing platform. Leverage
+                3D printing technology to test, iterate, and perfect your designs at unprecedented speed. From initial concept
+                validation to pre-production samples, accelerate product development with on-demand rapid prototyping capabilities.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -186,10 +187,12 @@ export default function RapidPrototyping() {
               FFF/FDM ADVANTAGES
             </span>
             <h2 className="text-4xl font-bold text-white mt-6 mb-6">
-              Why FFF is the Ultimate Rapid Prototyping Technology
+              Why FFF 3D Printing is the Ultimate Rapid Prototyping Technology
             </h2>
             <p className="text-xl text-gray-400">
-              Fused Filament Fabrication delivers unmatched speed, cost-effectiveness, and material versatility for rapid prototyping applications.
+              Fused Filament Fabrication 3D printing delivers unmatched speed, cost-effectiveness, and material versatility for
+              rapid prototyping applications. Additive manufacturing enables overnight turnaround of functional prototypes with
+              engineering-grade materials, dramatically accelerating product development cycles and reducing time-to-market.
             </p>
             <div className="h-1 w-24 bg-gradient-to-r from-red-600 to-transparent mx-auto mt-6" />
           </div>
