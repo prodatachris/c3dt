@@ -223,12 +223,21 @@ export default function EVO() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mt-6 mb-6">
               One Platform. Unlimited Tools.
             </h2>
-            <p className="text-xl text-gray-400">
+            <p className="text-xl text-gray-400 leading-relaxed">
               EVO's revolutionary quick-swap toolhead system lets you switch capabilities in seconds — not hours.
               Go from high-speed production to ultra-fine detail to metal printing, all on the same machine.
-              No recalibration. No downtime. Just swap and print.
+              An entire 3D Print Shop within a Single-Cell, designed as a multi-purpose system encompassing
+              10+ industrial 3D printers within a single unit.
             </p>
             <div className="h-1 w-24 bg-gradient-to-r from-red-600 to-transparent mx-auto mt-6" />
+          </div>
+
+          <div className="mb-16">
+            <img
+              src="/tool-heads copy.png"
+              alt="EVO Toolhead Lineup - High Speed, Detail, Pick-N-Place, Mill and more"
+              className="w-full max-w-6xl mx-auto rounded-2xl border-2 border-gray-800 shadow-2xl"
+            />
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
@@ -731,76 +740,6 @@ export default function EVO() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-24 bg-black relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
-
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
-              A{' '}
-              <span className="bg-red-600 text-white px-4 py-1">
-                Future-Proof
-              </span>{' '}
-              Platform
-            </h2>
-            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
-              EVO is an entire 3D Print Shop within a Single-Cell, designed as a multi-purpose
-              system encompassing an entire suite of 10+ industrial 3D printers within a single
-              unit that often outperforms currently established tools and production methods.
-            </p>
-          </div>
-
-          <div>
-            <img
-              src="/tool-heads copy.png"
-              alt="EVO Platform Configurations"
-              className="w-full max-w-6xl mx-auto"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="py-24 bg-gray-950 relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
-
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative order-2 lg:order-1">
-              <div className="relative rounded-2xl overflow-hidden border-2 border-gray-800 shadow-2xl">
-                <img
-                  src="/evo_img.png"
-                  alt="EVO Single-Cell 3D Printing Solution"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-
-            <div className="order-1 lg:order-2">
-              <div className="mb-6">
-                <span className="text-red-500 font-mono text-sm tracking-wider border border-red-900 px-4 py-2 rounded-full bg-red-950/30">
-                  FACTORY-IN-A-BOX
-                </span>
-              </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-                A Single-Cell 3D Printing Solution
-              </h2>
-              <p className="text-xl text-gray-300 leading-relaxed mb-6">
-                Single-Cell manufacturing is a system capable of using multiple tools and production methods in one process. EVO is being designed as a factory-in-a-box that switches from tool-to-tool instead of machine-to-machine on a factory-line.
-              </p>
-              <div className="flex items-start gap-4 p-6 bg-gradient-to-br from-gray-900 to-black border-2 border-gray-800 rounded-xl">
-                <div className="w-1 h-full bg-gradient-to-b from-red-600 to-red-900 rounded-full" />
-                <div>
-                  <h3 className="text-white font-bold mb-2 text-lg">Revolutionary Efficiency</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    By consolidating multiple manufacturing steps into a single platform, EVO eliminates the need for material handling between machines, reduces production time, and minimizes floor space requirements.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
