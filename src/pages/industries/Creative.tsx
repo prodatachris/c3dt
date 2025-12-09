@@ -434,11 +434,12 @@ export default function Creative() {
               <div className="flex items-start gap-4">
                 <Sparkles className="text-red-600 flex-shrink-0" size={24} />
                 <div>
-                  <h4 className="text-white font-bold mb-2">Custom Material Development</h4>
+                  <h4 className="text-white font-bold mb-2">Open Material System</h4>
                   <p className="text-gray-400 text-sm leading-relaxed">
-                    Need a specific aesthetic property not listed? EVO's open architecture supports custom material profiles. Work
-                    with our team to develop unique filament blends tailored to your artistic vision. From custom colors to
-                    specialized composite materials, push the boundaries of what's possible in creative 3D printing.
+                    Need a specific aesthetic property not listed? EVO's open architecture supports custom material profiles from
+                    third-party suppliers. The printer's flexible platform accommodates specialty filaments and unique material
+                    blends tailored to your artistic vision. From custom colors to specialized composite materials, push the
+                    boundaries of what's possible in creative 3D printing.
                   </p>
                 </div>
               </div>
