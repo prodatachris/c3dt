@@ -140,12 +140,6 @@ export default function Industrial() {
                   Request Industrial Demo
                   <ArrowRight size={20} />
                 </Link>
-                <Link
-                  to="/evo"
-                  className="inline-flex items-center justify-center gap-2 bg-gray-900 text-white px-8 py-4 rounded-lg hover:bg-gray-800 transition-all font-bold border-2 border-gray-700"
-                >
-                  View ROI Calculator
-                </Link>
               </div>
             </div>
 
@@ -398,10 +392,6 @@ export default function Industrial() {
                   <span className="text-red-500 font-mono text-sm tracking-wider">PERFORMANCE METRICS</span>
                 </div>
                 <div className="space-y-6">
-                  <div className="p-6 bg-black/30 rounded-lg border border-red-900/50">
-                    <div className="text-3xl font-bold text-white mb-2">Rapid ROI</div>
-                    <div className="text-gray-300">Return on investment potential through cost savings</div>
-                  </div>
                   <div className="p-6 bg-black/30 rounded-lg border border-red-900/50">
                     <div className="text-3xl font-bold text-white mb-2">Reduced Costs</div>
                     <div className="text-gray-300">Lower equipment and operational expenses</div>
